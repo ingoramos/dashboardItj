@@ -9,24 +9,18 @@
 library(readr)
 library(plyr)
 library(tidyverse)
-#library(caret)
 library(chron)
 library(plotly)
-library(readxl)
 library(dygraphs)
 library(xts)
 library(lubridate)
-library(chron)
 library(reshape2)
-#library(RCurl)
-#library(gganimate)
 
 library(shiny)
 library(shinydashboard)
 library(ggplot2)
 library(dplyr)
 library(viridis)
-library(hrbrthemes)
 library(ggridges)
 
 library(fmsb)
@@ -246,7 +240,7 @@ server <- function(input, output) {
             geom_area(fill="#69b3a2", alpha=0.4) +
             geom_line(color="#69b3a2", size=2) +
             geom_point(size=3, color="#69b3a2") +
-            theme_ipsum() +
+            theme_minimal() +
             ggtitle(paste0("Evolução de ", x2))
         
         ggplotly(lp)
@@ -304,7 +298,7 @@ server <- function(input, output) {
             geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
             scale_fill_viridis(name = "Casos Ativos", option = "C") +
             labs(title = paste0(x1, " por ", y1)) +
-            theme_ipsum() +
+            theme_minimal() +
             theme(
                 legend.position="none",
                 panel.spacing = unit(0.1, "lines"),
@@ -319,7 +313,7 @@ server <- function(input, output) {
             geom_boxplot() +
             scale_color_viridis(discrete = TRUE, alpha=0.6) +
             geom_jitter(color="black", size=0.4, alpha=0.9) +
-            theme_ipsum() +
+            theme_minimal() +
             theme(
                 legend.position="none",
                 plot.title = element_text(size=11,),
