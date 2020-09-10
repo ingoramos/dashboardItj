@@ -1,33 +1,33 @@
-bairro,cidade,uf,num_casos,latitude,longitude
-Cordeiros,Itajaí,Santa Catarina,627,-26.8860509,-48.7016043
-São Vicente,Itajaí,Santa Catarina,642,-26.9054631,-48.6980235
-Cidade Nova,Itajaí,Santa Catarina,387,-26.9225693,-48.6964714
-Espinheiros,Itajaí,Santa Catarina,281,-26.9109233,-48.749954
-Fazenda,Itajaí,Santa Catarina,245,-26.9256055,-48.6531404
-Centro,Itajaí,Santa Catarina,213,-26.9072238,-48.6605544
-São João,Itajaí,Santa Catarina,205,-26.9007181,-48.6773071
-Dom Bosco,Itajaí,Santa Catarina,161,-26.9203797,-48.6786001
-São Judas,Itajaí,Santa Catarina,135,-26.9116039,-48.6791213
-Itaipava,Itajaí,Santa Catarina,106,-26.9519422,-48.7357331
-Murta,Itajaí,Santa Catarina,86,-26.8716144,-48.6995854
-Santa Regina,Itajaí,Santa Catarina,85,-26.872460, -48.746650
-Barra do Rio,Itajaí,Santa Catarina,90,-26.8886312,-48.676737
-Ressacada,Itajaí,Santa Catarina,61,-26.9304662,-48.6782287
-Praia Brava,Itajaí,Santa Catarina,79,-26.9465792,-48.6427432
-Vila Operária,Itajaí,Santa Catarina,45,-26.9106443,-48.6717142
-Canhanduba,Itajaí,Santa Catarina,232,-26.9622566,-48.6805936
-Cabeçudas,Itajaí,Santa Catarina,33,-26.9259411,-48.6366788
-Imaruí,Itajaí,Santa Catarina,23,-26.8860252,-48.66851590013446
-Nossa Senhora das Graças,Itajaí,Santa Catarina,20,-26.920620, -48.670041
-Brilhante,Itajaí,Santa Catarina,17,-27.0031969,-48.8055523
-Limoeiro,Itajaí,Santa Catarina,13,-27.0447428,-48.8429914
-Salseiros,Itajaí,Santa Catarina,10,-26.8650763,-48.728368
-Paciência,Itajaí,Santa Catarina,9,-27.000024,-48.7661064
-KM 12,Itajaí,Santa Catarina,12,-26.9508762,-48.7601695
-Rio do Meio,Itajaí,Santa Catarina,5,-27.0127042,-48.7066896
-Baía,Itajaí,Santa Catarina,5,-26.982185,-48.7444888
-Volta de Cima,Itajaí,SC,2,-26.8865202,-48.7495548
-Arraial dos Cunha,Itajaí,SC,2,-26.9608329,-48.7720192
-Campeche,Itajaí,Santa Catarina,4,-27.0192701,-48.8449574
-São Roque,Itajaí,Santa Catarina,16,-26.904176,-48.724146
-Carvalho,Itajaí,Santa Catarina,21,-26.916001,-48.68549
+bairro,cidade,uf,num_casos,latitude,longitude;;;;;;
+Cordeiros,Itajaí,Santa Catarina,789,-26.8860509,-48.7016043;;;;;;
+São Vicente,Itajaí,Santa Catarina,801,-26.9054631,-48.6980235;;;;;;
+Cidade Nova,Itajaí,Santa Catarina,471,-26.9225693,-48.6964714;;;;;;
+Espinheiros,Itajaí,Santa Catarina,356,-26.9109233,-48.749954;;;;;;
+Fazenda,Itajaí,Santa Catarina,332,-26.9256055,-48.6531404;;;;;;
+Centro,Itajaí,Santa Catarina,329,-26.9072238,-48.6605544;;;;;;
+São João,Itajaí,Santa Catarina,295,-26.9007181,-48.6773071;;;;;;
+Dom Bosco,Itajaí,Santa Catarina,208,-26.9203797,-48.6786001;;;;;;
+São Judas,Itajaí,Santa Catarina,191,-26.9116039,-48.6791213;;;;;;
+Itaipava,Itajaí,Santa Catarina,143,-26.9519422,-48.7357331;;;;;;
+Murta,Itajaí,Santa Catarina,104,-26.8716144,-48.6995854;;;;;;
+Santa Regina,Itajaí,Santa Catarina,97,-26.872460, -48.746650;;;;;;
+Barra do Rio,Itajaí,Santa Catarina,113,-26.8886312,-48.676737;;;;;;
+Ressacada,Itajaí,Santa Catarina,82,-26.9304662,-48.6782287;;;;;;
+Praia Brava,Itajaí,Santa Catarina,104,-26.9465792,-48.6427432;;;;;;
+Vila Operária,Itajaí,Santa Catarina,70,-26.9106443,-48.6717142;;;;;;
+Canhanduba,Itajaí,Santa Catarina,471,-26.9622566,-48.6805936;;;;;;
+Cabeçudas,Itajaí,Santa Catarina,42,-26.9259411,-48.6366788;;;;;;
+Imaruí,Itajaí,Santa Catarina,32,-26.8860252,-48.66851590013446;;;;;;
+Nossa Senhora das Graças,Itajaí,Santa Catarina,24,-26.920620, -48.670041;;;;;;
+Brilhante,Itajaí,Santa Catarina,21,-27.0031969,-48.8055523;;;;;;
+Limoeiro,Itajaí,Santa Catarina,33,-27.0447428,-48.8429914;;;;;;
+Salseiros,Itajaí,Santa Catarina,17,-26.8650763,-48.728368;;;;;;
+Paciência,Itajaí,Santa Catarina,12,-27.000024,-48.7661064;;;;;;
+KM 12,Itajaí,Santa Catarina,18,-26.9508762,-48.7601695;;;;;;
+Rio do Meio,Itajaí,Santa Catarina,10,-27.0127042,-48.7066896;;;;;;
+Baía,Itajaí,Santa Catarina,5,-26.982185,-48.7444888;;;;;;
+Volta de Cima,Itajaí,SC,2,-26.8865202,-48.7495548;;;;;;
+Arraial dos Cunha,Itajaí,SC,4,-26.9608329,-48.7720192;;;;;;
+Campeche,Itajaí,Santa Catarina,4,-27.0192701,-48.8449574;;;;;;
+São Roque,Itajaí,Santa Catarina,17,-26.904176,-48.724146;;;;;;
+Carvalho,Itajaí,Santa Catarina,28,-26.916001,-48.68549;;;;;;
