@@ -1,156 +1,158 @@
-data;mes;idade;genero;comorbidades;hospital;cidade;uf
-04/04/2020;abril;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/04/2020;abril;62;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-23/04/2020;abril;65;M;não;Hospital do Coração;Balneário Camboriú;SC
-25/05/2020;maio;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/05/2020;maio;75;F;sim;Centro Integrado de Saúde;Itajaí;SC
-26/05/2020;maio;80;F;sim;Hospital do Coração;Balneário Camboriú;SC
-27/05/2020;maio;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/05/2020;maio;70;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-31/05/2020;maio;85;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC
-31/05/2020;maio;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-05/06/2020;junho;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/06/2020;junho;46;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/06/2020;junho;63;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/06/2020;junho;72;F;não;Centro Integrado de Saúde;Itajaí;SC
-08/06/2020;junho;87;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/06/2020;junho;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/06/2020;junho;40;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/06/2020;junho;43;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/06/2020;junho;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/06/2020;junho;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/06/2020;junho;32;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/06/2020;junho;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/06/2020;junho;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/06/2020;junho;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/06/2020;junho;40;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/06/2020;junho;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/06/2020;junho;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/06/2020;junho;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/06/2020;junho;49;F;não informado;Hospital da Unimed;Balneário Camboriú;SC
-23/06/2020;junho;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/06/2020;junho;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/06/2020;junho;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/06/2020;junho;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/06/2020;junho;76;M;sim;Hospital do Coração;Balneário Camboriú;SC
-29/06/2020;junho;35;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/06/2020;junho;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/06/2020;junho;81;M;sim;Hospital do Coração;Balneário Camboriú;SC
-30/06/2020;junho;79;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/07/2020;julho;48;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/07/2020;julho;63;M;não informado;Hospital de Gaspar;Gaspar;SC
-05/07/2020;julho;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/07/2020;julho;66;M;sim;Hospital Florianópolis;Florianópolis;SC
-07/07/2020;julho;63;M;sim;Hospital de Penha;Penha;SC
-07/07/2020;julho;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/07/2020;julho;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/07/2020;julho;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/07/2020;julho;39;M;sim;Hospital do Coração;Balneário Camboriú;SC
-09/07/2020;julho;68;M;sim;Hospital do Coração;Balneário Camboriú;SC
-09/07/2020;julho;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/07/2020;julho;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/07/2020;julho;90;F;sim;não informado;;SC
-11/07/2020;julho;73;F;sim;não informado;;SC
-11/07/2020;julho;73;M;sim;não informado;;SC
-12/07/2020;julho;62;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC
-12/07/2020;julho;69;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC
-12/07/2020;julho;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/07/2020;julho;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/07/2020;julho;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/07/2020;julho;74;M;sim;Hospital do Coração;Balneário Camboriú;SC
-14/07/2020;julho;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-14/07/2020;julho;89;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/07/2020;julho;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/07/2020;julho;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/07/2020;julho;72;F;sim;não informado;Nova Trento;SC
-15/07/2020;julho;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/07/2020;julho;78;M;sim;Hospital Nereu Ramos;Florianópolis;SC
-17/07/2020;julho;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/07/2020;julho;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/07/2020;julho;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/07/2020;julho;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/07/2020;julho;87;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/07/2020;julho;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/07/2020;julho;91;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/07/2020;julho;62;M;sim;Hospital do Coração;Balneário Camboriú;SC
-21/07/2020;julho;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/07/2020;julho;73;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/07/2020;julho;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/07/2020;julho;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/07/2020;julho;69;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-24/07/2020;julho;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/07/2020;julho;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/07/2020;julho;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/07/2020;julho;70;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/07/2020;julho;41;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;29;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;78;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;77;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/07/2020;julho;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/07/2020;julho;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/07/2020;julho;59;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/07/2020;julho;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/07/2020;julho;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/07/2020;julho;89;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/07/2020;julho;87;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/07/2020;julho;99;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;51;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-01/08/2020;agosto;61;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/08/2020;agosto;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-03/08/2020;agosto;67;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/08/2020;agosto;92;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/08/2020;agosto;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/08/2020;agosto;80;M;sim;Hospital do Coração;Balneário Camboriú;SC
-04/08/2020;agosto;49;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-05/08/2020;agosto;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/08/2020;agosto;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/08/2020;agosto;65;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/08/2020;agosto;76;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/08/2020;agosto;80;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/08/2020;agosto;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/08/2020;agosto;62;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/08/2020;agosto;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/08/2020;agosto;72;M;sim;Hospital Nossa Senhora da Penha;Penha;SC
-09/08/2020;agosto;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;56;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;72;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;83;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;60;M;sim;Hospital Nossa Senhora da Penha;Penha;SC
-11/08/2020;agosto;53;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/08/2020;agosto;65;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/08/2020;agosto;84;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/08/2020;agosto;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/08/2020;agosto;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/08/2020;agosto;59;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/08/2020;agosto;57;M;sim;Hospital Santa Catarina;Blumenau;SC
-14/08/2020;agosto;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/08/2020;agosto;52;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/08/2020;agosto;83;M;sim;Hospital Luiz Alves;Luiz Alves;SC
-17/08/2020;agosto;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/08/2020;agosto;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/08/2020;agosto;91;F;sim;Hospital do Coração;Balneário Camboriú;SC
-18/08/2020;agosto;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/08/2020;agosto;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/08/2020;agosto;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/08/2020;agosto;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/08/2020;agosto;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/08/2020;agosto;62;F;sim;Hospital Santa Isabel;Blumenau;SC
-21/08/2020;agosto;81;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/08/2020;agosto;67;M;sim;Hospital do Coração;Balneário Camboriú;SC
-23/08/2020;agosto;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/08/2020;agosto;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/08/2020;agosto;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/08/2020;agosto;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/08/2020;agosto;47;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/08/2020;agosto;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/08/2020;agosto;69;F;sim;Hospital de Pato Branco;Pato Branco;PR
-29/08/2020;agosto;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/08/2020;agosto;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/08/2020;agosto;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/09/2020;setembro;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/09/2020;setembro;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/09/2020;setembro;75;F;sim;Hospital Florianópolis;Florianópolis;SC
+data;mes;idade;genero;comorbidades;hospital;cidade;uf;
+04/04/2020;abril;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/04/2020;abril;62;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+23/04/2020;abril;65;M;não;Hospital do Coração;Balneário Camboriú;SC;
+25/05/2020;maio;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/05/2020;maio;75;F;sim;Centro Integrado de Saúde;Itajaí;SC;
+26/05/2020;maio;80;F;sim;Hospital do Coração;Balneário Camboriú;SC;
+27/05/2020;maio;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/05/2020;maio;70;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+31/05/2020;maio;85;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC;
+31/05/2020;maio;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+05/06/2020;junho;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/06/2020;junho;46;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/06/2020;junho;63;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/06/2020;junho;72;F;não;Centro Integrado de Saúde;Itajaí;SC;
+08/06/2020;junho;87;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/06/2020;junho;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/06/2020;junho;40;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/06/2020;junho;43;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/06/2020;junho;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/06/2020;junho;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/06/2020;junho;32;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/06/2020;junho;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/06/2020;junho;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/06/2020;junho;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/06/2020;junho;40;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/06/2020;junho;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/06/2020;junho;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/06/2020;junho;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/06/2020;junho;49;F;não informado;Hospital da Unimed;Balneário Camboriú;SC;
+23/06/2020;junho;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/06/2020;junho;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/06/2020;junho;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/06/2020;junho;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/06/2020;junho;76;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+29/06/2020;junho;35;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/06/2020;junho;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/06/2020;junho;81;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+30/06/2020;junho;79;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/07/2020;julho;48;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/07/2020;julho;63;M;não informado;Hospital de Gaspar;Gaspar;SC;
+05/07/2020;julho;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/07/2020;julho;66;M;sim;Hospital Florianópolis;Florianópolis;SC;
+07/07/2020;julho;63;M;sim;Hospital de Penha;Penha;SC;
+07/07/2020;julho;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/07/2020;julho;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/07/2020;julho;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/07/2020;julho;39;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+09/07/2020;julho;68;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+09/07/2020;julho;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/07/2020;julho;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/07/2020;julho;90;F;sim;não informado;;SC;
+11/07/2020;julho;73;F;sim;não informado;;SC;
+11/07/2020;julho;73;M;sim;não informado;;SC;
+12/07/2020;julho;62;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC;
+12/07/2020;julho;69;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC;
+12/07/2020;julho;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/07/2020;julho;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/07/2020;julho;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/07/2020;julho;74;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+14/07/2020;julho;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+14/07/2020;julho;89;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/07/2020;julho;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/07/2020;julho;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/07/2020;julho;72;F;sim;não informado;Nova Trento;SC;
+15/07/2020;julho;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/07/2020;julho;78;M;sim;Hospital Nereu Ramos;Florianópolis;SC;
+17/07/2020;julho;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/07/2020;julho;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/07/2020;julho;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/07/2020;julho;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/07/2020;julho;87;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/07/2020;julho;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/07/2020;julho;91;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/07/2020;julho;62;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+21/07/2020;julho;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/07/2020;julho;73;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/07/2020;julho;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/07/2020;julho;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/07/2020;julho;69;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+24/07/2020;julho;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/07/2020;julho;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/07/2020;julho;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/07/2020;julho;70;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/07/2020;julho;41;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;29;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;78;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;77;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/07/2020;julho;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/07/2020;julho;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/07/2020;julho;59;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/07/2020;julho;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/07/2020;julho;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/07/2020;julho;89;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/07/2020;julho;87;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/07/2020;julho;99;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;51;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+01/08/2020;agosto;61;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/08/2020;agosto;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+03/08/2020;agosto;67;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/08/2020;agosto;92;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/08/2020;agosto;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/08/2020;agosto;80;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+04/08/2020;agosto;49;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+05/08/2020;agosto;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/08/2020;agosto;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/08/2020;agosto;65;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/08/2020;agosto;76;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/08/2020;agosto;80;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/08/2020;agosto;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/08/2020;agosto;62;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/08/2020;agosto;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/08/2020;agosto;72;M;sim;Hospital Nossa Senhora da Penha;Penha;SC;
+09/08/2020;agosto;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;56;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;72;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;83;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;60;M;sim;Hospital Nossa Senhora da Penha;Penha;SC;
+11/08/2020;agosto;53;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/08/2020;agosto;65;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/08/2020;agosto;84;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/08/2020;agosto;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/08/2020;agosto;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/08/2020;agosto;59;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/08/2020;agosto;57;M;sim;Hospital Santa Catarina;Blumenau;SC;
+14/08/2020;agosto;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/08/2020;agosto;52;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/08/2020;agosto;83;M;sim;Hospital Luiz Alves;Luiz Alves;SC;
+17/08/2020;agosto;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/08/2020;agosto;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/08/2020;agosto;91;F;sim;Hospital do Coração;Balneário Camboriú;SC;
+18/08/2020;agosto;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/08/2020;agosto;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/08/2020;agosto;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/08/2020;agosto;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/08/2020;agosto;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/08/2020;agosto;62;F;sim;Hospital Santa Isabel;Blumenau;SC;
+21/08/2020;agosto;81;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/08/2020;agosto;67;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+23/08/2020;agosto;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/08/2020;agosto;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/08/2020;agosto;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/08/2020;agosto;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/08/2020;agosto;47;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/08/2020;agosto;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/08/2020;agosto;69;F;sim;Hospital de Pato Branco;Pato Branco;PR;
+29/08/2020;agosto;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/08/2020;agosto;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/08/2020;agosto;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/09/2020;setembro;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/09/2020;setembro;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/09/2020;setembro;75;F;sim;Hospital Florianópolis;Florianópolis;SC;
+15/09/2020;setembro;67;M;sim;Hospital Santa Isabel;Blumenau;SC;
+15/09/2020;setembro;69;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
