@@ -59,7 +59,7 @@ ui <- dashboardPage(
                     
                     fluidRow(
                         box(dygraphOutput("plot1", height = 480)),
-                        box(selectInput("lineVars", label = "Selecione", choices = list("Casos Ativos" = "casos_ativos", "Novos Casos Confirmados" = "casos_confirmados_total",
+                        box(selectInput("lineVars", label = "Selecione", choices = list("Novos Casos Confirmados" = "casos_confirmados_total",
                                                                                         "Novos Casos Curados" = "casos_curados_total", "Novos Casos Descartados" = "casos_descartados_total",
                                                                                         "Óbitos" = "mortes_total"), selected = 1),
                             plotlyOutput("linePlot", height = 400))
@@ -72,6 +72,10 @@ ui <- dashboardPage(
                                                                                        "Novos Casos Curados" = "casos_curados_novos", "Novos Casos Descartados" = "casos_descartados_novos",
                                                                                        "Óbitos" = "mortes_novos"), selected = 1),
                             plotlyOutput("plot3", height = 400))
+                    ),
+                    
+                    fluidRow(
+                        box(plotlyOutput("loliplot", height = 400))
                     )
             ),
             
@@ -106,15 +110,55 @@ ui <- dashboardPage(
             
             tabItem(tabName = "dados",
                     fluidRow(h1("Dados usados para o desenvolvimento do dashboard")),
-                    fluidRow(tags$br("Os dados serão atualizados diarimente, os dados são extraídos dos boletins diários do município")),
+                    fluidRow(tags$br(h3("Tabela geral com os casos ativos, casos curados, casos confirmados, casos descartados e óbitos:"))),
                     fluidRow(
-                        dataTableOutput("tabela"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
+                        dataTableOutput("tabela1"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
                         
-                    )),
+                    ),
+                    fluidRow(tags$br(h3("Dados dos óbitos:"))),
+                    fluidRow(
+                        dataTableOutput("tabela2"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
+                        
+                    ),
+                    fluidRow(tags$br(h3("Dados sobre a ocupação do Hospital Marieta:"))),
+                    fluidRow(
+                        dataTableOutput("tabela3"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
+                        
+                    ),
+                    fluidRow(tags$br(h3("Dados dos casos acumulados por bairro:"))),
+                    fluidRow(
+                        dataTableOutput("tabela4"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
+                        
+                    )
+                    ),
             
             
             tabItem(tabName = "contato",
-                    h2("Ingo Ramos"))
+                    h2(tags$b("Ingo Ramos")),
+                    
+                    h4("Sou aluno da Universidade Federal de Santa Catarina - UFSC, porém nativo de Itajaí, e desde o começo da pandemia, venho
+                       acompanhando a situação do Município.", tags$br("O propósito deste trabalho é apenas facilitar a visualização dos dados que são 
+                       disponibilizados pela prefeitura. ", tags$b("não tire conclusões precipitadas sobre a situação da pandemia, continue praticando
+                       o isolamento (se possível), além de seguir as recomendações do Governo/OMS")), tags$br(),
+                       "Vou deixar aqui meus contatos caso você queira tirar alguma dúvida ou até mesmo sugerir algo:", tags$br(),
+                       tags$br(),
+                       "Clique para acessar o ", tags$a(href="https://www.linkedin.com/in/ingo-ramos/", "LinkedIn."), tags$br(),
+                       "Ou mandar um e-mail para:",  tags$b("ingoramos12@gmail.com"), "que responderei assim que possível.", tags$br(),
+                       tags$br(),
+                       "E para você que quer replicar o trabalho, os dados/código usados para o desenvolvimento estão no ", 
+                       tags$a(href="https://github.com/ingoramos/dashboardItj", "GitHub"), " e vou atualizando todos os dias, quando novos dados 
+                       estiverem disponíveis.", tags$br(),
+                       tags$br(),
+                       
+                       "O serviço que estou usando para disponibilizar os dados é o da Amazon Web Services - AWS, que não é um serviço gratuito, 
+                       por conta disso, o dashboard não estará disponível o dia todo para acesso, apenas em alguns momentos do dia, para que eu 
+                       consiga manter por mais meses.", tags$br(), 
+                       tags$br(),
+                       "Os dados são retirados do ", tags$a(href="http://coronavirus.itajai.sc.gov.br/", "boletim do município.") 
+                       
+                       )
+                    
+                    )
         )
     )
 )
@@ -326,6 +370,28 @@ server <- function(input, output) {
         ggplotly(bp)
     })
     
+    output$loliplot <- renderPlotly({
+        
+        corona <- coronaData() %>% 
+            mutate(mycolor = ifelse(dif_casos_ativos>0, "type1", "type2"))
+        
+        
+        lp <- ggplot(corona, aes(x=data, y=dif_casos_ativos)) +
+            geom_segment( aes(x=data, xend=data, y=0, yend=dif_casos_ativos, color=mycolor), size=1.3, alpha=0.9) +
+            theme_light() +
+            theme(
+                legend.position = "none",
+                panel.border = element_blank(),
+            ) +
+            ggtitle("Diferença de Casos Ativos por Boletim") +
+            xlab("Mês") +
+            ylab("Diferença")
+        
+        
+        ggplotly(lp)
+        
+    })
+    
     marietaData <- reactive({
         
         marieta <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/marieta.csv",  locale = locale(encoding = 'LATIN1'))
@@ -524,8 +590,20 @@ server <- function(input, output) {
             theme(legend.position = "none")
     })
     
-    output$tabela <- renderDataTable({
+    output$tabela1 <- renderDataTable({
         data.table::data.table(coronaData())
+    })
+    
+    output$tabela2 <- renderDataTable({
+        data.table::data.table(obitosData())
+    })
+    
+    output$tabela3 <- renderDataTable({
+        data.table::data.table(marietaData())
+    })
+    
+    output$tabela4 <- renderDataTable({
+        data.table::data.table(mapaData())
     })
     
 }
