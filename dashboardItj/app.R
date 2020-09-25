@@ -166,6 +166,8 @@ ui <- dashboardPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     
+    #raw data
+    
     coronaData <- reactive({
         
         corona <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/covid_Itajai.csv",  locale = locale(encoding = 'LATIN1'))
