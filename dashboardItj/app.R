@@ -417,7 +417,7 @@ server <- function(input, output) {
     obitosData <- reactive({
         
         #locale = locale(encoding = 'LATIN1')
-        
+         
         obitos <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/obitos_covid.csv",  locale = locale(encoding = 'LATIN1'))
         obitos$num <- 1
         
