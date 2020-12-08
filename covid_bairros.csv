@@ -1,33 +1,33 @@
-bairro,cidade,uf,num_casos,latitude,longitude
-Cordeiros,Itajaí,Santa Catarina,1468,-26.8860509,-48.7016043
-São Vicente,Itajaí,Santa Catarina,1522,-26.9054631,-48.6980235
-Cidade Nova,Itajaí,Santa Catarina,914,-26.9225693,-48.6964714
-Espinheiros,Itajaí,Santa Catarina,667,-26.9109233,-48.749954
-Fazenda,Itajaí,Santa Catarina,709,-26.9256055,-48.6531404
-Centro,Itajaí,Santa Catarina,722,-26.9072238,-48.6605544
-São João,Itajaí,Santa Catarina,619,-26.9007181,-48.6773071
-Dom Bosco,Itajaí,Santa Catarina,400,-26.9203797,-48.6786001
-São Judas,Itajaí,Santa Catarina,378,-26.9116039,-48.6791213
-Itaipava,Itajaí,Santa Catarina,348,-26.9519422,-48.7357331
-Murta,Itajaí,Santa Catarina,206,-26.8716144,-48.6995854
-Santa Regina,Itajaí,Santa Catarina,183,-26.872460, -48.746650
-Barra do Rio,Itajaí,Santa Catarina,184,-26.8886312,-48.676737
-Ressacada,Itajaí,Santa Catarina,180,-26.9304662,-48.6782287
-Praia Brava,Itajaí,Santa Catarina,227,-26.9465792,-48.6427432
-Vila Operária,Itajaí,Santa Catarina,150,-26.9106443,-48.6717142
-Canhanduba,Itajaí,Santa Catarina,494,-26.9622566,-48.6805936
-Cabeçudas,Itajaí,Santa Catarina,74,-26.9259411,-48.6366788
-Imaruí,Itajaí,Santa Catarina,79,-26.8860252,-48.66851590013446
-Nossa Senhora das Graças,Itajaí,Santa Catarina,34,-26.920620, -48.670041
-Brilhante,Itajaí,Santa Catarina,53,-27.0031969,-48.8055523
-Limoeiro,Itajaí,Santa Catarina,68,-27.0447428,-48.8429914
-Salseiros,Itajaí,Santa Catarina,42,-26.8650763,-48.728368
-Paciência,Itajaí,Santa Catarina,45,-27.000024,-48.7661064
-KM 12,Itajaí,Santa Catarina,32,-26.9508762,-48.7601695
-Rio do Meio,Itajaí,Santa Catarina,20,-27.0127042,-48.7066896
-Baía,Itajaí,Santa Catarina,14,-26.982185,-48.7444888
-Volta de Cima,Itajaí,Sabta Catarina,5,-26.8865202,-48.7495548
-Arraial dos Cunha,Itajaí,Santa Catarina,20,-26.9608329,-48.7720192
-Campeche,Itajaí,Santa Catarina,29,-27.0192701,-48.8449574
-São Roque,Itajaí,Santa Catarina,42,-26.904176,-48.724146
-Carvalho,Itajaí,Santa Catarina,50,-26.916001,-48.68549
+bairro,cidade,uf,num_casos,obitos,latitude,longitude
+Cordeiros,Itajaí,Santa Catarina,1612,39,-26.8860509,-48.7016043
+São Vicente,Itajaí,Santa Catarina,1704,35,-26.9054631,-48.6980235
+Cidade Nova,Itajaí,Santa Catarina,984,17,-26.9225693,-48.6964714
+Espinheiros,Itajaí,Santa Catarina,739,17,-26.9109233,-48.749954
+Fazenda,Itajaí,Santa Catarina,848,14,-26.9256055,-48.6531404
+Centro,Itajaí,Santa Catarina,834,17,-26.9072238,-48.6605544
+São João,Itajaí,Santa Catarina,702,18,-26.9007181,-48.6773071
+Dom Bosco,Itajaí,Santa Catarina,452,11,-26.9203797,-48.6786001
+São Judas,Itajaí,Santa Catarina,448,5,-26.9116039,-48.6791213
+Itaipava,Itajaí,Santa Catarina,376,6,-26.9519422,-48.7357331
+Murta,Itajaí,Santa Catarina,240,2,-26.8716144,-48.6995854
+Santa Regina,Itajaí,Santa Catarina,209,,-26.872460, -48.746650
+Barra do Rio,Itajaí,Santa Catarina,206,7,-26.8886312,-48.676737
+Ressacada,Itajaí,Santa Catarina,215,1,-26.9304662,-48.6782287
+Praia Brava,Itajaí,Santa Catarina,251,5,-26.9465792,-48.6427432
+Vila Operária,Itajaí,Santa Catarina,173,3,-26.9106443,-48.6717142
+Canhanduba,Itajaí,Santa Catarina,498,,-26.9622566,-48.6805936
+Cabeçudas,Itajaí,Santa Catarina,78,2,-26.9259411,-48.6366788
+Imaruí,Itajaí,Santa Catarina,95,,-26.8860252,-48.66851590013446
+Nossa Senhora das Graças,Itajaí,Santa Catarina,35,,-26.920620, -48.670041
+Brilhante,Itajaí,Santa Catarina,54,,-27.0031969,-48.8055523
+Limoeiro,Itajaí,Santa Catarina,69,,-27.0447428,-48.8429914
+Salseiros,Itajaí,Santa Catarina,55,1,-26.8650763,-48.728368
+Paciência,Itajaí,Santa Catarina,49,,-27.000024,-48.7661064
+KM 12,Itajaí,Santa Catarina,32,,-26.9508762,-48.7601695
+Rio do Meio,Itajaí,Santa Catarina,24,1,-27.0127042,-48.7066896
+Baía,Itajaí,Santa Catarina,19,1,-26.982185,-48.7444888
+Volta de Cima,Itajaí,Sabta Catarina,6,,-26.8865202,-48.7495548
+Arraial dos Cunha,Itajaí,Santa Catarina,20,,-26.9608329,-48.7720192
+Campeche,Itajaí,Santa Catarina,29,,-27.0192701,-48.8449574
+São Roque,Itajaí,Santa Catarina,47,,-26.904176,-48.724146
+Carvalho,Itajaí,Santa Catarina,57,1,-26.916001,-48.68549
