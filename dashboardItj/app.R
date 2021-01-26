@@ -6,6 +6,9 @@
 #
 #    http://shiny.rstudio.com/
 #
+
+#Pacotes usados para a criação do Dashboard
+#leitura e transformação dos dados
 library(readr)
 library(plyr)
 library(tidyverse)
@@ -15,27 +18,30 @@ library(dygraphs)
 library(xts)
 library(lubridate)
 library(reshape2)
-
+#criação do dashbard e gráficos
 library(shiny)
 library(shinydashboard)
 library(ggplot2)
 library(dplyr)
 library(viridis)
 library(ggridges)
-
+#extras para os gráficos
 library(fmsb)
-
 library(leaflet)
 library(ggExtra)
 library(ggpol)
-
+library(latticeExtra)
+#gráfico de árvore
 library(treemap)
 library(d3treeR)
 
-# Define UI for application that draws a histogram
+# Define a UI para os gráficos.
 ui <- dashboardPage(
+    #titulo do dashboard
     dashboardHeader(title = "Covid-19 Itajaí"),
+    #tipo de dashboard que foi desenvolvido
     dashboardSidebar(
+        #definindo o menu lateral com as páginas
         sidebarMenu(
             menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
             menuItem("Óbitos/UTI's", tabName = "dashboard2", icon = icon("dashboard")),
@@ -43,9 +49,13 @@ ui <- dashboardPage(
             menuItem("Dados", tabName = "dados", icon = icon("table", lib = "font-awesome")),
             menuItem("Contato", tabName = "contato", icon = icon("send",lib="glyphicon"))
         )),
+    #corpo do dashboard, onde serão "plotados" os gráficos
     dashboardBody(
         tabItems(
+            #primeira página do dashboard, são definidas as posições de cada elemento, página geral, com informações sobre casos ativos, descartados, curados
+            # confirmados e óbitos.
             tabItem(tabName = "dashboard",
+                    # as valueBox são para informar dados gerais sobre o coronavirus em Itajaí.
                     fluidRow(
                         valueBoxOutput("casos_confirmados"),
                         valueBoxOutput("casos_descartados")
@@ -58,7 +68,9 @@ ui <- dashboardPage(
                     ),
                     
                     fluidRow(
+                        #gráfico de linha temporal do número de casos ativos por dia ou boletim
                         box(dygraphOutput("plot1", height = 480)),
+                        #gráfico de linha com possibilidade de seleção da variável a ser visualizada
                         box(selectInput("lineVars", label = "Selecione", choices = list("Novos Casos Confirmados" = "casos_confirmados_total",
                                                                                         "Novos Casos Curados" = "casos_curados_total", "Novos Casos Descartados" = "casos_descartados_total",
                                                                                         "Óbitos" = "mortes_total"), selected = 1),
@@ -66,40 +78,66 @@ ui <- dashboardPage(
                     ),
                     
                     fluidRow(
-                        box(selectInput("vars", label = "Selecione", choices = list("Mês" = "mes", "Semana" = "semana_ano"), selected = 1),
-                            plotOutput("plot2", height = 400)),
-                        box(selectInput("numVars", label = "Selecione", choices = list("Casos Ativos" = "casos_ativos", "Novos Casos Confirmados" = "casos_confirmados_novos",
-                                                                                       "Novos Casos Curados" = "casos_curados_novos", "Novos Casos Descartados" = "casos_descartados_novos",
-                                                                                       "Óbitos" = "mortes_novos"), selected = 1),
-                            plotlyOutput("plot3", height = 400))
+                        #gráfico com a a diferença de casos por boletim, ou seja, se o número aumenta ou diminui
+                        box(plotlyOutput("loliplot", height = 400)),
+                        #gráfico com as variáveis casos confirmados, casos curados e óbitos no mesmo plano (péssimo para essa visualização)
+                        box(plotlyOutput("multiLine", height = 400))
                     ),
                     
                     fluidRow(
-                        box(plotlyOutput("loliplot", height = 400))
-                    )
+                        #seleção de variávies para os próximos dois gráficos
+                        box(width = 4, selectInput("vars", label = "Selecione", choices = list("Mês" = "mes", "Semana" = "semana_ano"), selected = 1)),
+                        
+                        box(width = 4, selectInput("page1year", label = "Selecione o Ano", choices = list("2020" = "2020", "2021" = "2021"), selected = 1)),
+                        
+                        box(width = 4, selectInput("numVars", label = "Selecione", choices = list("Casos Ativos" = "casos_ativos", "Novos Casos Confirmados" = "casos_confirmados_novos",
+                                                                                   "Novos Casos Curados" = "casos_curados_novos", "Novos Casos Descartados" = "casos_descartados_novos",
+                                                                                   "Óbitos" = "mortes_novos"), selected = 1)),
+                    ),
+                    
+                    fluidRow(
+                        #gráfico de distribuição (ridge), mostrando a concentração de dados
+                        box(plotOutput("plot2", height = 400)),
+                        #gráficode distribuição (boxplot), com individuos
+                        box(plotlyOutput("plot3", height = 400))
+                    ),
+                    
+                    
             ),
             
-            
+            #página sobre as variáveis de ocupação do hospital e dos óbitos
             tabItem(tabName = "dashboard2",
                     fluidRow(
-                        box(selectInput("varsObito", label = "Selecione", choices = list("Mês" = "mes", "Semana" = "semana_ano"), selected = 1)),
-                        valueBoxOutput("internacoes")
+                        #value boxes com informações sobre internação no Hospital Marieta
+                        valueBoxOutput("internacoes"),
+                        valueBoxOutput("internadosNum")
                     ),
                     fluidRow(
+                        #caixas para seleção de variáveis
+                        box(width = 6, selectInput("varsObito", label = "Selecione", choices = list("Mês" = "mes", "Semana" = "semana_ano"), selected = 1)),
+                        box(width = 6, selectInput("page2year", label = "Selecione o Ano", choices = list("2020" = "2020", "2021" = "2021"), selected = 1))
+                    ),
+                    fluidRow(
+                        #gráfico de barras comparando o número de mortes por gênero / mês ou semana
                         box(plotlyOutput("plot4", height = 400)),
-                        box(plotlyOutput("pyramidPlot", height = 400))
+                        #gráfico de árvore separado por ano, informando as mortes por mês, hospital faixa etária e genero
+                        box(d3tree3Output("treePlot"), height = 400)
+                        
                     ),
                     fluidRow(
-                        box(d3tree3Output("treePlot"), height = 400),
+                        #gráfico de piramide, informando a quantidade de óbitos por faixa etária
+                        box(plotlyOutput("pyramidPlot", height = 400)),
+                        #gráfico de donut, informando número de óbitos acumulados por genero
                         box(plotOutput("donutPlot", height = 400))
                     ),
                     
             ),
             
+            #mapa de casos por bairro
             tabItem(tabName = "map",
                     
-                    
                     fluidRow(
+                        #configurando para que o mapa seja responsivo e ocupe toda a tela
                         tags$style(type = "text/css", "#plotMapa {height: calc(100vh - 80px) !important;}"),
                         leafletOutput("plotMapa", height = "100%")
                     )
@@ -107,7 +145,7 @@ ui <- dashboardPage(
                     
             ),
             
-            
+            #página com a disponibilização dos dados usados para a criação do dashboard
             tabItem(tabName = "dados",
                     fluidRow(h1("Dados usados para o desenvolvimento do dashboard")),
                     fluidRow(tags$br(h3("Tabela geral com os casos ativos, casos curados, casos confirmados, casos descartados e óbitos:"))),
@@ -132,14 +170,14 @@ ui <- dashboardPage(
                     )
                     ),
             
-            
+            #página de contato e outras informações
             tabItem(tabName = "contato",
                     h2(tags$b("Ingo Ramos")),
                     
                     h4("Sou aluno da Universidade Federal de Santa Catarina - UFSC, porém nativo de Itajaí, e desde o começo da pandemia, venho
                        acompanhando a situação do Município.", tags$br("O propósito deste trabalho é apenas facilitar a visualização dos dados que são 
                        disponibilizados pela prefeitura. ", tags$b("não tire conclusões precipitadas sobre a situação da pandemia, continue praticando
-                       o isolamento (se possível), além de seguir as recomendações do Governo/OMS")), tags$br(),
+                       o isolamento (se possível), além de seguir as recomendações da OMS")), tags$br(),
                        "Vou deixar aqui meus contatos caso você queira tirar alguma dúvida ou até mesmo sugerir algo:", tags$br(),
                        tags$br(),
                        "Clique para acessar o ", tags$a(href="https://www.linkedin.com/in/ingo-ramos/", "LinkedIn."), tags$br(),
@@ -166,10 +204,10 @@ ui <- dashboardPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     
-    #raw data
-    
+    # importando a base de dados diretamente do github, com os dados já atualizados
     coronaData <- reactive({
         
+        #tratamento dos dados referentes a datas
         corona <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/covid_Itajai.csv",  locale = locale(encoding = 'LATIN1'))
         corona$data <- as.Date(corona$data, format='%d/%m/%Y')
         corona$report_time <- format(as.POSIXct(corona$report_time,format="%Y:%m:%d %H:%M:%S"),"%H:%M:%S")
@@ -184,6 +222,7 @@ server <- function(input, output) {
         return(corona)
     })
     
+    #fazendo as tranformações necessárias para a visualização dos values boxes
     output$casos_confirmados <- renderValueBox({
         
         corona <- coronaData()
@@ -249,6 +288,7 @@ server <- function(input, output) {
         )
     })
     
+    #criação de um objeto usado para o gráfico de linha temporal
     dyReactive <- reactive({
         corona <- coronaData()
         corona$date_time <- ymd_hms(corona$date_time)
@@ -256,7 +296,7 @@ server <- function(input, output) {
         return(don)
     })
     
-    
+    #gráfico de linha temporal
     output$plot1 <- renderDygraph({
         
         p <- dygraph(dyReactive(), main = "Casos Ativos por Boletim Epidemiológico") %>%
@@ -267,8 +307,10 @@ server <- function(input, output) {
             dyRoller(rollPeriod = 1)
         
         p
+        
     })
     
+    #gráfico de linha com a possibilidade de escolha de variáveis
     output$linePlot <- renderPlotly({
         
         lineData <- coronaData()
@@ -293,6 +335,7 @@ server <- function(input, output) {
         
     })
     
+    #plotagem do mapa com os dados de número de casos por bairro (desatualizado) - etapa de leitura dos dados e transformação
     mapaData <- reactive({
         
         mapa <- read.csv("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/covid_bairros.csv", encoding = "UTF-8")
@@ -306,6 +349,7 @@ server <- function(input, output) {
         return(mapa)
     })
     
+    #renderizando o gráfico
     output$plotMapa <- renderLeaflet({
         
         pal <- colorFactor(c("navy", "red"), domain = c("abaixo", "acima"))
@@ -325,6 +369,7 @@ server <- function(input, output) {
             addControl(titulo, position = "bottomright")
     })
     
+    #gráfico Ridge de distribuição
     output$plot2 <- renderPlot({
         
         x1 <- as.character(input$numVars)
@@ -340,7 +385,9 @@ server <- function(input, output) {
             y1 <- paste0(y1[[1]])
         }
         
-        p <- ggplot(coronaData(), aes_string(x = input$numVars, y = input$vars, fill = "..x..")) +
+        p <- coronaData() %>%
+            filter(ano == input$page1year) %>%
+            ggplot(aes_string(x = input$numVars, y = input$vars, fill = "..x..")) +
             geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
             scale_fill_viridis(name = "Casos Ativos", option = "C") +
             labs(title = paste0(x1, " por ", y1)) +
@@ -353,8 +400,10 @@ server <- function(input, output) {
         p
     })
     
+    #gráfico de distribuição BoxPlot com individuos
     output$plot3 <- renderPlotly({
         bp <- coronaData() %>%
+            filter(ano == input$page1year) %>%
             ggplot( aes_string(x=input$vars, y=input$numVars, fill=input$vars)) +
             geom_boxplot() +
             scale_color_viridis(discrete = TRUE, alpha=0.6) +
@@ -372,6 +421,7 @@ server <- function(input, output) {
         ggplotly(bp)
     })
     
+    #gráfico loliplot, com a diferença de casos
     output$loliplot <- renderPlotly({
         
         corona <- coronaData() %>% 
@@ -394,12 +444,31 @@ server <- function(input, output) {
         
     })
     
+    #gráfico de linha simples
+    output$multiLine <- renderPlotly({
+        
+        #xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
+        
+        mlp <- ggplot(corona, aes(x=data)) +
+            geom_line(aes(y=casos_confirmados_total, color = "Confirmados")) +
+            geom_line(aes(y=casos_curados_total, color = "Curados")) +
+            geom_line(aes(y=mortes_total, color = "Óbitos")) +
+            ggtitle("Casos Confirmados, Casos Curados, Óbitos (Acumulados)") +
+            theme(axis.title.y=element_blank(),
+                  legend.position = "bottom")
+        
+        mlp <- ggplotly(mlp)
+        mlp
+    })
+    
+    #dados da ocupação de leitos de UTI - leitura dos dados
     marietaData <- reactive({
         
         marieta <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/marieta.csv",  locale = locale(encoding = 'LATIN1'))
         return(marieta)
     })
     
+    #value boxes sobre as internações
     output$internacoes <- renderValueBox({
         
         marieta <- marietaData()
@@ -414,6 +483,25 @@ server <- function(input, output) {
     })
     
     
+    output$internadosNum <- renderValueBox({
+        
+        marietaNum <- marietaData()
+        
+        total_internados <- tail(marietaNum$internacoes_uti, 1)
+        total_vagas_uti <- tail(marietaNum$total_vagas_uti, 1)
+        
+        text <- paste0("do total de ", total_vagas_uti, " vagas de UTI disponíveis")
+        
+        valueBox(
+            paste0(total_internados, " internações"), text, icon = icon("procedures", lib = "font-awesome")
+        )
+    })
+    
+#    output$vacinados <- renderValueBox({
+#        
+#    })
+    
+    #leitura e transformação dos dados dos óbitos
     obitosData <- reactive({
         
         #locale = locale(encoding = 'LATIN1')
@@ -437,7 +525,7 @@ server <- function(input, output) {
         obitos$faixa_etaria <- NA
         
         for(i in 1:nrow(obitos)){
-            if(obitos$idade[i] > 0 & obitos$idade[i] <= 2){obitos$faixa_etaria[i] <- "Até 2 anos"}
+            if(obitos$idade[i] >= 0 & obitos$idade[i] <= 2){obitos$faixa_etaria[i] <- "Até 2 anos"}
             else if(obitos$idade[i] > 2 & obitos$idade[i] <= 5){obitos$faixa_etaria[i] <- "Entre 2 e 5"}
             else if(obitos$idade[i] > 5 & obitos$idade[i] <= 10){obitos$faixa_etaria[i] <- "Entre 6 e 10"}
             else if(obitos$idade[i] > 10 & obitos$idade[i] <= 15){obitos$faixa_etaria[i] <- "Entre 11 e 15"}
@@ -471,11 +559,13 @@ server <- function(input, output) {
         
     })
     
+    #gráfico de barra comparando o número de óbitos
     output$plot4 <- renderPlotly({
         
         if(dataObito() == "mes"){
             
             bpData <- obitosData() %>%
+                filter(ano == input$page2year) %>%
                 group_by(mes, genero) %>%
                 summarise(num = sum(num))
             
@@ -494,6 +584,7 @@ server <- function(input, output) {
         
         else{
             bpData <- obitosData() %>%
+                filter(ano == input$page2year) %>%
                 group_by(semana_ano, genero) %>%
                 summarise(num = sum(num))
             
@@ -516,6 +607,7 @@ server <- function(input, output) {
         
     })
     
+    #gráfico de piramide com o número de óbitos por faixa etária
     output$pyramidPlot <- renderPlotly({
         
         pp <- ggplot(data = obitosData(), aes(x = as.factor(faixa_etaria), fill = genero)) + 
@@ -530,8 +622,10 @@ server <- function(input, output) {
         
     })
     
+    #gráfico de árvore interativo 
     output$treePlot <- renderD3tree3({
         treeData <-obitosData() %>%
+            filter(ano == input$page2year) %>%
             group_by(mes, hospital, faixa_etaria, genero) %>%
             summarise(num = sum(num))
         
@@ -558,7 +652,9 @@ server <- function(input, output) {
         #p_inter
     })
     
+    #gráfico de donut com o número de óbitos acumulados por genero
     output$donutPlot <- renderPlot({
+        
         donut <- obitosData() %>%
             group_by(genero) %>%
             summarise(num = sum(num))
@@ -592,6 +688,7 @@ server <- function(input, output) {
             theme(legend.position = "none")
     })
     
+    #output das tabelas de dados
     output$tabela1 <- renderDataTable({
         data.table::data.table(coronaData())
     })
@@ -610,5 +707,5 @@ server <- function(input, output) {
     
 }
 
-# Run the application 
+# Roda a aplicação
 shinyApp(ui = ui, server = server)
