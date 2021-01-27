@@ -625,27 +625,32 @@ server <- function(input, output) {
     
     #gráfico de árvore interativo 
     output$treePlot <- renderD3tree3({
+        
         treeData <- obitosData() %>%
             filter(ano == input$page2year) %>%
             group_by(mes, hospital, faixa_etaria, genero) %>%
             summarise(num = sum(num))
         
-        t <- d3tree3(treemap(treeData,
-                        index=c("mes", "hospital", "faixa_etaria", "genero"),
-                        vSize="num",
-                        type="index",
-                        palette = "Set2",
-                        bg.labels=c("white"),
-                        fontsize.labels=c(15,15,15,15),
-                        title="TreeMap dos Óbitos",
-                        align.labels=list(
-                            c("center", "center"), 
-                            c("right", "bottom")
-                        )
-        ),
-        rootname = "TreeMap")
+        #print(treeData)
         
-        t
+        tmp <- treemap(
+                    dtf = treeData,
+                    index=c("mes", "hospital", "faixa_etaria", "genero"),
+                    vSize="num",
+                    type="index",
+                    palette = "Set2",
+                    bg.labels=c("white"),
+                    fontsize.labels=c(15,15,15,15),
+                    title="TreeMap dos Óbitos",
+                    align.labels=list(
+                        c("center", "center"), 
+                        c("right", "bottom")
+                    )
+                )
+                
+        tmp <- d3tree3(tmp, rootname = "TreeMap")
+        
+        tmp
         
     })
     
