@@ -448,6 +448,7 @@ server <- function(input, output) {
     output$multiLine <- renderPlotly({
         
         #xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
+        corona <- coronaData()
         
         mlp <- ggplot(corona, aes(x=data)) +
             geom_line(aes(y=casos_confirmados_total, color = "Confirmados")) +
@@ -624,17 +625,12 @@ server <- function(input, output) {
     
     #gráfico de árvore interativo 
     output$treePlot <- renderD3tree3({
-        treeData <-obitosData() %>%
+        treeData <- obitosData() %>%
             filter(ano == input$page2year) %>%
             group_by(mes, hospital, faixa_etaria, genero) %>%
             summarise(num = sum(num))
         
-        treeData
-        
-        #p <- 
-        #p
-        
-        d3tree3(treemap(treeData,
+        t <- d3tree3(treemap(treeData,
                         index=c("mes", "hospital", "faixa_etaria", "genero"),
                         vSize="num",
                         type="index",
@@ -649,7 +645,8 @@ server <- function(input, output) {
         ),
         rootname = "TreeMap")
         
-        #p_inter
+        t
+        
     })
     
     #gráfico de donut com o número de óbitos acumulados por genero
