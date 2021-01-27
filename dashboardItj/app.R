@@ -11,26 +11,26 @@
 #leitura e transformação dos dados
 library(readr)
 library(plyr)
-library(tidyverse)
+library(dplyr)
 library(chron)
-library(plotly)
-library(dygraphs)
 library(xts)
 library(lubridate)
 library(reshape2)
-#criação do dashbard e gráficos
+#criação do dashbard
 library(shiny)
 library(shinydashboard)
+#e gráficos
 library(ggplot2)
-library(dplyr)
+library(plotly)
+library(dygraphs)
+library(leaflet)
+#extras para os gráficos
+library(latticeExtra)
 library(viridis)
 library(ggridges)
-#extras para os gráficos
-library(fmsb)
-library(leaflet)
 library(ggExtra)
 library(ggpol)
-library(latticeExtra)
+#library(fmsb)
 #gráfico de árvore
 library(treemap)
 library(d3treeR)
@@ -176,8 +176,8 @@ ui <- dashboardPage(
                     
                     h4("Sou aluno da Universidade Federal de Santa Catarina - UFSC, porém nativo de Itajaí, e desde o começo da pandemia, venho
                        acompanhando a situação do Município.", tags$br("O propósito deste trabalho é apenas facilitar a visualização dos dados que são 
-                       disponibilizados pela prefeitura. ", tags$b("não tire conclusões precipitadas sobre a situação da pandemia, continue praticando
-                       o isolamento (se possível), além de seguir as recomendações da OMS")), tags$br(),
+                       disponibilizados pela prefeitura. ", tags$b("Não tire conclusões precipitadas sobre a situação da pandemia, continue praticando
+                       o isolamento (se possível), além de seguir os protocolos de segurança.")), tags$br(),
                        "Vou deixar aqui meus contatos caso você queira tirar alguma dúvida ou até mesmo sugerir algo:", tags$br(),
                        tags$br(),
                        "Clique para acessar o ", tags$a(href="https://www.linkedin.com/in/ingo-ramos/", "LinkedIn."), tags$br(),
