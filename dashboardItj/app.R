@@ -121,7 +121,7 @@ ui <- dashboardPage(
                         #gráfico de barras comparando o número de mortes por gênero / mês ou semana
                         box(plotlyOutput("plot4", height = 400)),
                         #gráfico de árvore separado por ano, informando as mortes por mês, hospital faixa etária e genero
-                        box(d3tree3Output("treePlot"), height = 400)
+                        box(d3tree2Output("treePlot"), height = 400)
                         
                     ),
                     fluidRow(
@@ -362,7 +362,8 @@ server <- function(input, output) {
             setView(lng = -48.751037, lat = -26.975853, zoom = 12) %>%
             addTiles() %>%
             addCircleMarkers(~longitude, ~latitude, label=~as.character(paste0(bairro, " - ", num_casos, " casos totais")),
-                             radius = ~ifelse(type == "acima", 12, 8),
+                             labelOptions = labelOptions(textsize = "15px"),
+                             radius = ~ifelse(type == "acima", 14, 10),
                              color = ~pal(type),
                              stroke = FALSE, fillOpacity = 0.5
             ) %>%
@@ -578,7 +579,11 @@ server <- function(input, output) {
                           position = position_dodge(0.9), size=4.5)+
                 scale_fill_brewer(palette="Set2")+
                 theme_minimal() +
-                ggtitle("Óbitos Mês por Gênero")
+                ggtitle("Óbitos Mês por Gênero") +
+                theme(
+                    plot.title = element_text(size=11,),
+                    axis.text.x = element_text(angle = 45, vjust = 1,
+                                               size = 12, hjust = 1, family = "serif"))
             
             ggplotly(bpo)
         }
@@ -618,6 +623,7 @@ server <- function(input, output) {
             scale_fill_brewer(palette = "Set2") +
             ggtitle("Óbitos por Faixa Etária por Gênero") +
             theme_bw()
+            
         
         ggplotly(pp)
         
