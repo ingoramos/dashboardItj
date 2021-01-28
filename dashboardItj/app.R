@@ -35,6 +35,9 @@ library(ggpol)
 library(treemap)
 library(d3treeR)
 
+#mensagem de erro do treeplot
+options(shiny.sanitize.errors = TRUE)
+
 # Define a UI para os gráficos.
 ui <- dashboardPage(
     #titulo do dashboard
