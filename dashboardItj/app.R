@@ -662,7 +662,9 @@ server <- function(input, output) {
                     align.labels=list(
                         c("center", "center"), 
                         c("right", "bottom")
-                    )
+                    ),
+                    #render treemap no shiny server
+                    pdf(file = NULL)
                 )
                 
         tmpf <- d3tree2(tmp, rootname = "TreeMap")
