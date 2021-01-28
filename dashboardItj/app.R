@@ -36,7 +36,7 @@ library(treemap)
 library(d3treeR)
 
 #mensagem de erro do treeplot
-options(shiny.sanitize.errors = TRUE)
+#options(shiny.sanitize.errors = TRUE)
 
 # Define a UI para os gráficos.
 ui <- dashboardPage(
@@ -646,11 +646,9 @@ server <- function(input, output) {
     
     
     #gráfico de árvore interativo 
-    output$treePlot <- renderD3tree3({
+    output$treePlot <- renderD3tree2({
         
-        
-        
-        print(dataTreeMap())
+        #print(dataTreeMap())
         
         tmp <- treemap(
                     dtf = dataTreeMap(),
@@ -667,9 +665,9 @@ server <- function(input, output) {
                     )
                 )
                 
-        tmp <- d3tree3(tmp, rootname = "TreeMap")
+        tmpf <- d3tree2(tmp, rootname = "TreeMap")
         
-        tmp
+        tmpf
         
     })
     
