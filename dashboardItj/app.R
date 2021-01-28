@@ -629,18 +629,28 @@ server <- function(input, output) {
         
     })
     
-    #gráfico de árvore interativo 
-    output$treePlot <- renderD3tree3({
+    
+    dataTreeMap <- reactive({
         
         treeData <- obitosData() %>%
             filter(ano == input$page2year) %>%
             group_by(mes, hospital, faixa_etaria, genero) %>%
             summarise(num = sum(num))
         
-        #print(treeData)
+        return(treeData)
+        
+    })
+    
+    
+    #gráfico de árvore interativo 
+    output$treePlot <- renderD3tree3({
+        
+        
+        
+        print(dataTreeMap())
         
         tmp <- treemap(
-                    dtf = treeData,
+                    dtf = dataTreeMap(),
                     index=c("mes", "hospital", "faixa_etaria", "genero"),
                     vSize="num",
                     type="index",
