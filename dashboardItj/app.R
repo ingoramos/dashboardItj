@@ -36,6 +36,7 @@ library(treemap)
 library(d3treeR)
 
 #mensagem de erro do treeplot
+pdf(NULL)
 #options(shiny.sanitize.errors = TRUE)
 
 # Define a UI para os gráficos.
