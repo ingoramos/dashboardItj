@@ -114,7 +114,8 @@ ui <- dashboardPage(
                     fluidRow(
                         #value boxes com informações sobre internação no Hospital Marieta
                         valueBoxOutput("internacoes"),
-                        valueBoxOutput("internadosNum")
+                        valueBoxOutput("internadosNum"),
+                        valueBoxOutput("vacinados")
                     ),
                     fluidRow(
                         #caixas para seleção de variáveis
@@ -171,6 +172,11 @@ ui <- dashboardPage(
                     fluidRow(
                         dataTableOutput("tabela4"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
                         
+                    ),
+                    fluidRow(tags$br(h3("Dados da vacinação na cidade:"))),
+                    fluidRow(
+                        dataTableOutput("tabela5"),style = "height:500px; overflow-y: scroll;overflow-x: scroll;"
+                        
                     )
                     ),
             
@@ -223,6 +229,7 @@ server <- function(input, output) {
         for (i in 1:nrow(corona)){
             corona$semana_ano[i] <- paste0("Semana ", lubridate::week(ymd(corona$data[i])))
         }
+
         return(corona)
     })
     
@@ -474,6 +481,15 @@ server <- function(input, output) {
         return(marieta)
     })
     
+    #dados sobre a vacina
+    vacinasData <- reactive({
+        
+        vacina <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/vacinas.csv")
+        return(vacina)
+        
+        
+    })
+    
     #value boxes sobre as internações
     output$internacoes <- renderValueBox({
         
@@ -499,13 +515,21 @@ server <- function(input, output) {
         text <- paste0("do total de ", total_vagas_uti, " vagas de UTI disponíveis")
         
         valueBox(
-            paste0(total_internados, " internações"), text, icon = icon("procedures", lib = "font-awesome")
+            paste0(total_internados, " internações"), text, icon = icon("procedures", lib = "font-awesome"), color = "orange"
         )
     })
     
-#    output$vacinados <- renderValueBox({
-#        
-#    })
+    output$vacinados <- renderValueBox({
+        
+        vacinas <- vacinasData()
+        
+        num_vacinados <- tail(vacinas$vacinados, 1)
+        
+        valueBox(
+            paste0(num_vacinados, " vacinados"), "no total", icon = icon("syringe", lib = "font-awesome")
+        )
+        
+    })
     
     #leitura e transformação dos dados dos óbitos
     obitosData <- reactive({
@@ -725,6 +749,10 @@ server <- function(input, output) {
     
     output$tabela4 <- renderDataTable({
         data.table::data.table(mapaData())
+    })
+    
+    output$tabela5 <- renderDataTable({
+        data.table::data.table(vacinasData())
     })
     
 }
