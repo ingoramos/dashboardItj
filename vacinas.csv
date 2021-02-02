@@ -1,3 +1,7 @@
 data;mes;num_mes;ano;total_vacinas;vacinas_recebidas;vacinados;novos_vacinados;vacinas_restantes
 27/01/2021;janeiro;1;2021;1880;1880;1092;1092;788
 28/01/2021;janeiro;1;2021;1880;0;1207;115;673
+29/01/2021;janeiro;1;2021;3260;1380;1233;26;2027
+30/01/2021;janeiro;1;2021;3260;0;1278;45;1982
+31/01/2021;janeiro;1;2021;3260;0;1278;0;1982
+01/02/2021;fevereiro;2;2021;3260;0;1310;32;1950
