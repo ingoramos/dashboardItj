@@ -1,575 +1,576 @@
 data;mes;num_mes;ano;idade;genero;comorbidades;hospital;cidade;uf;
-04/04/2020;abril;4;2020;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/04/2020;abril;4;2020;62;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-23/04/2020;abril;4;2020;65;M;não;Hospital do Coração;Balneário Camboriú;SC
-25/05/2020;maio;5;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/05/2020;maio;5;2020;75;F;sim;Centro Integrado de Saúde;Itajaí;SC
-26/05/2020;maio;5;2020;80;F;sim;Hospital do Coração;Balneário Camboriú;SC
-27/05/2020;maio;5;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/05/2020;maio;5;2020;70;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-31/05/2020;maio;5;2020;85;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC
-31/05/2020;maio;5;2020;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-05/06/2020;junho;6;2020;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/06/2020;junho;6;2020;46;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/06/2020;junho;6;2020;63;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/06/2020;junho;6;2020;72;F;não;Centro Integrado de Saúde;Itajaí;SC
-09/06/2020;junho;6;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/06/2020;junho;6;2020;40;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/06/2020;junho;6;2020;43;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/06/2020;junho;6;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/06/2020;junho;6;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/06/2020;junho;6;2020;32;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/06/2020;junho;6;2020;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/06/2020;junho;6;2020;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/06/2020;junho;6;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/06/2020;junho;6;2020;40;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/06/2020;junho;6;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/06/2020;junho;6;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/06/2020;junho;6;2020;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/06/2020;junho;6;2020;49;F;não informado;Hospital da Unimed;Balneário Camboriú;SC
-23/06/2020;junho;6;2020;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/06/2020;junho;6;2020;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/06/2020;junho;6;2020;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/06/2020;junho;6;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/06/2020;junho;6;2020;76;M;sim;Hospital do Coração;Balneário Camboriú;SC
-29/06/2020;junho;6;2020;35;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/06/2020;junho;6;2020;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/06/2020;junho;6;2020;81;M;sim;Hospital do Coração;Balneário Camboriú;SC
-30/06/2020;junho;6;2020;79;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/07/2020;julho;7;2020;48;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/07/2020;julho;7;2020;63;M;não informado;Hospital de Gaspar;Gaspar;SC
-05/07/2020;julho;7;2020;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/07/2020;julho;7;2020;66;M;sim;Hospital Florianópolis;Florianópolis;SC
-07/07/2020;julho;7;2020;63;M;sim;Hospital de Penha;Penha;SC
-07/07/2020;julho;7;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/07/2020;julho;7;2020;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/07/2020;julho;7;2020;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/07/2020;julho;7;2020;39;M;sim;Hospital do Coração;Balneário Camboriú;SC
-09/07/2020;julho;7;2020;68;M;sim;Hospital do Coração;Balneário Camboriú;SC
-09/07/2020;julho;7;2020;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/07/2020;julho;7;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/07/2020;julho;7;2020;90;F;sim;não informado;;SC
-11/07/2020;julho;7;2020;73;F;sim;não informado;;SC
-11/07/2020;julho;7;2020;73;M;sim;não informado;;SC
-12/07/2020;julho;7;2020;62;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC
-12/07/2020;julho;7;2020;69;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC
-12/07/2020;julho;7;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/07/2020;julho;7;2020;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/07/2020;julho;7;2020;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/07/2020;julho;7;2020;74;M;sim;Hospital do Coração;Balneário Camboriú;SC
-14/07/2020;julho;7;2020;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-14/07/2020;julho;7;2020;89;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/07/2020;julho;7;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/07/2020;julho;7;2020;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/07/2020;julho;7;2020;72;F;sim;não informado;Nova Trento;SC
-15/07/2020;julho;7;2020;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/07/2020;julho;7;2020;78;M;sim;Hospital Nereu Ramos;Florianópolis;SC
-17/07/2020;julho;7;2020;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/07/2020;julho;7;2020;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/07/2020;julho;7;2020;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/07/2020;julho;7;2020;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/07/2020;julho;7;2020;87;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/07/2020;julho;7;2020;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/07/2020;julho;7;2020;91;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/07/2020;julho;7;2020;62;M;sim;Hospital do Coração;Balneário Camboriú;SC
-21/07/2020;julho;7;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/07/2020;julho;7;2020;73;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/07/2020;julho;7;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/07/2020;julho;7;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/07/2020;julho;7;2020;69;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-24/07/2020;julho;7;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/07/2020;julho;7;2020;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/07/2020;julho;7;2020;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/07/2020;julho;7;2020;70;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/07/2020;julho;7;2020;41;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;7;2020;29;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;7;2020;78;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;7;2020;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/07/2020;julho;7;2020;77;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/07/2020;julho;7;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/07/2020;julho;7;2020;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/07/2020;julho;7;2020;59;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/07/2020;julho;7;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/07/2020;julho;7;2020;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/07/2020;julho;7;2020;89;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/07/2020;julho;7;2020;87;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/07/2020;julho;7;2020;99;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;7;2020;51;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;7;2020;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;7;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;7;2020;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/07/2020;julho;7;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-01/08/2020;agosto;8;2020;61;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/08/2020;agosto;8;2020;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-03/08/2020;agosto;8;2020;67;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/08/2020;agosto;8;2020;92;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/08/2020;agosto;8;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/08/2020;agosto;8;2020;80;M;sim;Hospital do Coração;Balneário Camboriú;SC
-04/08/2020;agosto;8;2020;49;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-05/08/2020;agosto;8;2020;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/08/2020;agosto;8;2020;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/08/2020;agosto;8;2020;65;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/08/2020;agosto;8;2020;76;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/08/2020;agosto;8;2020;80;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/08/2020;agosto;8;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/08/2020;agosto;8;2020;62;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/08/2020;agosto;8;2020;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/08/2020;agosto;8;2020;72;M;sim;Hospital Nossa Senhora da Penha;Penha;SC
-09/08/2020;agosto;8;2020;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;8;2020;56;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;8;2020;72;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;8;2020;83;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/08/2020;agosto;8;2020;60;M;sim;Hospital Nossa Senhora da Penha;Penha;SC
-11/08/2020;agosto;8;2020;53;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/08/2020;agosto;8;2020;65;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/08/2020;agosto;8;2020;84;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/08/2020;agosto;8;2020;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/08/2020;agosto;8;2020;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/08/2020;agosto;8;2020;59;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/08/2020;agosto;8;2020;57;M;sim;Hospital Santa Catarina;Blumenau;SC
-14/08/2020;agosto;8;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/08/2020;agosto;8;2020;52;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/08/2020;agosto;8;2020;83;M;sim;Hospital Luiz Alves;Luiz Alves;SC
-17/08/2020;agosto;8;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/08/2020;agosto;8;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/08/2020;agosto;8;2020;91;F;sim;Hospital do Coração;Balneário Camboriú;SC
-18/08/2020;agosto;8;2020;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/08/2020;agosto;8;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/08/2020;agosto;8;2020;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/08/2020;agosto;8;2020;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/08/2020;agosto;8;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/08/2020;agosto;8;2020;62;F;sim;Hospital Santa Isabel;Blumenau;SC
-21/08/2020;agosto;8;2020;81;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/08/2020;agosto;8;2020;67;M;sim;Hospital do Coração;Balneário Camboriú;SC
-23/08/2020;agosto;8;2020;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/08/2020;agosto;8;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/08/2020;agosto;8;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/08/2020;agosto;8;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/08/2020;agosto;8;2020;47;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/08/2020;agosto;8;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
+04/04/2020;abril;4;2020;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/04/2020;abril;4;2020;62;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+23/04/2020;abril;4;2020;65;M;não;Hospital do Coração;Balneário Camboriú;SC;
+25/05/2020;maio;5;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/05/2020;maio;5;2020;75;F;sim;Centro Integrado de Saúde;Itajaí;SC;
+26/05/2020;maio;5;2020;80;F;sim;Hospital do Coração;Balneário Camboriú;SC;
+27/05/2020;maio;5;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/05/2020;maio;5;2020;70;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+31/05/2020;maio;5;2020;85;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC;
+31/05/2020;maio;5;2020;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+05/06/2020;junho;6;2020;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/06/2020;junho;6;2020;46;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/06/2020;junho;6;2020;63;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/06/2020;junho;6;2020;72;F;não;Centro Integrado de Saúde;Itajaí;SC;
+09/06/2020;junho;6;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/06/2020;junho;6;2020;40;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/06/2020;junho;6;2020;43;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/06/2020;junho;6;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/06/2020;junho;6;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/06/2020;junho;6;2020;32;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/06/2020;junho;6;2020;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/06/2020;junho;6;2020;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/06/2020;junho;6;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/06/2020;junho;6;2020;40;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/06/2020;junho;6;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/06/2020;junho;6;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/06/2020;junho;6;2020;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/06/2020;junho;6;2020;49;F;não informado;Hospital da Unimed;Balneário Camboriú;SC;
+23/06/2020;junho;6;2020;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/06/2020;junho;6;2020;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/06/2020;junho;6;2020;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/06/2020;junho;6;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/06/2020;junho;6;2020;76;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+29/06/2020;junho;6;2020;35;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/06/2020;junho;6;2020;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/06/2020;junho;6;2020;81;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+30/06/2020;junho;6;2020;79;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/07/2020;julho;7;2020;48;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/07/2020;julho;7;2020;63;M;não informado;Hospital de Gaspar;Gaspar;SC;
+05/07/2020;julho;7;2020;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/07/2020;julho;7;2020;66;M;sim;Hospital Florianópolis;Florianópolis;SC;
+07/07/2020;julho;7;2020;63;M;sim;Hospital de Penha;Penha;SC;
+07/07/2020;julho;7;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/07/2020;julho;7;2020;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/07/2020;julho;7;2020;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/07/2020;julho;7;2020;39;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+09/07/2020;julho;7;2020;68;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+09/07/2020;julho;7;2020;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/07/2020;julho;7;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/07/2020;julho;7;2020;90;F;sim;não informado;;SC;
+11/07/2020;julho;7;2020;73;F;sim;não informado;;SC;
+11/07/2020;julho;7;2020;73;M;sim;não informado;;SC;
+12/07/2020;julho;7;2020;62;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC;
+12/07/2020;julho;7;2020;69;M;sim;Hospital Balneário Camboriú;Balneário Camboriú;SC;
+12/07/2020;julho;7;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/07/2020;julho;7;2020;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/07/2020;julho;7;2020;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/07/2020;julho;7;2020;74;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+14/07/2020;julho;7;2020;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+14/07/2020;julho;7;2020;89;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/07/2020;julho;7;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/07/2020;julho;7;2020;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/07/2020;julho;7;2020;72;F;sim;não informado;Nova Trento;SC;
+15/07/2020;julho;7;2020;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/07/2020;julho;7;2020;78;M;sim;Hospital Nereu Ramos;Florianópolis;SC;
+17/07/2020;julho;7;2020;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/07/2020;julho;7;2020;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/07/2020;julho;7;2020;93;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/07/2020;julho;7;2020;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/07/2020;julho;7;2020;87;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/07/2020;julho;7;2020;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/07/2020;julho;7;2020;91;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/07/2020;julho;7;2020;62;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+21/07/2020;julho;7;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/07/2020;julho;7;2020;73;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/07/2020;julho;7;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/07/2020;julho;7;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/07/2020;julho;7;2020;69;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+24/07/2020;julho;7;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/07/2020;julho;7;2020;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/07/2020;julho;7;2020;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/07/2020;julho;7;2020;70;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/07/2020;julho;7;2020;41;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;7;2020;29;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;7;2020;78;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;7;2020;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/07/2020;julho;7;2020;77;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/07/2020;julho;7;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/07/2020;julho;7;2020;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/07/2020;julho;7;2020;59;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/07/2020;julho;7;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/07/2020;julho;7;2020;80;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/07/2020;julho;7;2020;89;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/07/2020;julho;7;2020;87;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/07/2020;julho;7;2020;99;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;7;2020;51;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;7;2020;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;7;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;7;2020;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/07/2020;julho;7;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+01/08/2020;agosto;8;2020;61;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/08/2020;agosto;8;2020;67;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+03/08/2020;agosto;8;2020;67;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/08/2020;agosto;8;2020;92;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/08/2020;agosto;8;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/08/2020;agosto;8;2020;80;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+04/08/2020;agosto;8;2020;49;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+05/08/2020;agosto;8;2020;60;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/08/2020;agosto;8;2020;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/08/2020;agosto;8;2020;65;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/08/2020;agosto;8;2020;76;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/08/2020;agosto;8;2020;80;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/08/2020;agosto;8;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/08/2020;agosto;8;2020;62;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/08/2020;agosto;8;2020;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/08/2020;agosto;8;2020;72;M;sim;Hospital Nossa Senhora da Penha;Penha;SC;
+09/08/2020;agosto;8;2020;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;8;2020;56;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;8;2020;72;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;8;2020;83;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/08/2020;agosto;8;2020;60;M;sim;Hospital Nossa Senhora da Penha;Penha;SC;
+11/08/2020;agosto;8;2020;53;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/08/2020;agosto;8;2020;65;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/08/2020;agosto;8;2020;84;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/08/2020;agosto;8;2020;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/08/2020;agosto;8;2020;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/08/2020;agosto;8;2020;59;M;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/08/2020;agosto;8;2020;57;M;sim;Hospital Santa Catarina;Blumenau;SC;
+14/08/2020;agosto;8;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/08/2020;agosto;8;2020;52;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/08/2020;agosto;8;2020;83;M;sim;Hospital Luiz Alves;Luiz Alves;SC;
+17/08/2020;agosto;8;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/08/2020;agosto;8;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/08/2020;agosto;8;2020;91;F;sim;Hospital do Coração;Balneário Camboriú;SC;
+18/08/2020;agosto;8;2020;66;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/08/2020;agosto;8;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/08/2020;agosto;8;2020;32;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/08/2020;agosto;8;2020;45;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/08/2020;agosto;8;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/08/2020;agosto;8;2020;62;F;sim;Hospital Santa Isabel;Blumenau;SC;
+21/08/2020;agosto;8;2020;81;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/08/2020;agosto;8;2020;67;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+23/08/2020;agosto;8;2020;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/08/2020;agosto;8;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/08/2020;agosto;8;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/08/2020;agosto;8;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/08/2020;agosto;8;2020;47;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/08/2020;agosto;8;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
 28/08/2020;agosto;8;2020;69;F;sim;Hospital de Pato Branco;Pato Branco;PR;
-29/08/2020;agosto;8;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/08/2020;agosto;8;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-31/08/2020;agosto;8;2020;43;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC
-31/08/2020;agosto;8;2020;92;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-31/08/2020;agosto;8;2020;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/09/2020;setembro;9;2020;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-09/09/2020;setembro;9;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/09/2020;setembro;9;2020;75;F;sim;Hospital Florianópolis;Florianópolis;SC
-15/09/2020;setembro;9;2020;67;M;sim;Hospital Santa Isabel;Blumenau;SC
-15/09/2020;setembro;9;2020;69;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/09/2020;setembro;9;2020;84;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/09/2020;setembro;9;2020;61;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/09/2020;setembro;9;2020;47;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-22/09/2020;setembro;9;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/09/2020;setembro;9;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/09/2020;setembro;9;2020;67;F;sim;Centro Integrado de Saúde;Itajaí;SC
-03/10/2020;outubro;10;2020;64;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/10/2020;outubro;10;2020;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-08/10/2020;outubro;10;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-15/10/2020;outubro;10;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/10/2020;outubro;10;2020;69;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-20/10/2020;outubro;10;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/10/2020;outubro;10;2020;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/10/2020;outubro;10;2020;0;F;não;Hospital Pequeno Anjo;Itajaí;SC
-29/10/2020;outubro;10;2020;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-01/11/2020;novembro;11;2020;43;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-01/11/2020;novembro;11;2020;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/11/2020;novembro;11;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/11/2020;novembro;11;2020;48;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC
-11/11/2020;novembro;11;2020;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/11/2020;novembro;11;2020;68;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/11/2020;novembro;11;2020;94;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/11/2020;novembro;11;2020;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/11/2020;novembro;11;2020;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/11/2020;novembro;11;2020;62;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/11/2020;novembro;11;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/11/2020;novembro;11;2020;95;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/11/2020;novembro;11;2020;75;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/11/2020;novembro;11;2020;72;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/11/2020;novembro;11;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-24/11/2020;novembro;11;2020;68;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-25/11/2020;novembro;11;2020;65;M;sim;Hospital do Coração;Balneário Camboriú;SC
-26/11/2020;novembro;11;2020;73;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC
-26/11/2020;novembro;11;2020;83;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-27/11/2020;novembro;11;2020;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-28/11/2020;novembro;11;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/11/2020;novembro;11;2020;67;M;sim;Centro Integrado de Saúde;Itajaí;SC
-01/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-01/12/2020;dezembro;12;2020;66;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC
-02/12/2020;dezembro;12;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-02/12/2020;dezembro;12;2020;54;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/12/2020;dezembro;12;2020;84;M;sim;Hospital do Coração;Balneário Camboriú;SC
-03/12/2020;dezembro;12;2020;65;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-04/12/2020;dezembro;12;2020;88;M;não;Hospital da Unimed;Balneário Camboriú;SC
-04/12/2020;dezembro;12;2020;75;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-05/12/2020;dezembro;12;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-05/12/2020;dezembro;12;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/12/2020;dezembro;12;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/12/2020;dezembro;12;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/12/2020;dezembro;12;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/12/2020;dezembro;12;2020;60;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-07/12/2020;dezembro;12;2020;93;F;sim;Hospital da Unimed;Balneário Camboriú;SC
-07/12/2020;dezembro;12;2020;80;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-09/12/2020;dezembro;12;2020;53;M;sim;Hospital do Coração;Balneário Camboriú;SC
-10/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-10/12/2020;dezembro;12;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/12/2020;dezembro;12;2020;72;M;sim;não informado;Itajaí;SC
-11/12/2020;dezembro;12;2020;83;M;sim;não informado;Itajaí;SC
-12/12/2020;dezembro;12;2020;57;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/12/2020;dezembro;12;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/12/2020;dezembro;12;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/12/2020;dezembro;12;2020;94;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/12/2020;dezembro;12;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-13/12/2020;dezembro;12;2020;64;M;sim;Unidade Pronto Atendimento - CIS;Itajaí;SC
-15/12/2020;dezembro;12;2020;70;F;sim;não informado;Itajaí;SC
-15/12/2020;dezembro;12;2020;52;M;não;não informado;Itajaí;SC
-15/12/2020;dezembro;12;2020;71;F;sim;não informado;Itajaí;SC
-15/12/2020;dezembro;12;2020;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/12/2020;dezembro;12;2020;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/12/2020;dezembro;12;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/12/2020;dezembro;12;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/12/2020;dezembro;12;2020;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-17/12/2020;dezembro;12;2020;89;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/12/2020;dezembro;12;2020;66;M;sim;não informado;Itajaí;SC
-18/12/2020;dezembro;12;2020;85;F;sim;não informado;Itajaí;SC
-18/12/2020;dezembro;12;2020;92;F;sim;não informado;Itajaí;SC
-18/12/2020;dezembro;12;2020;42;F;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC
-18/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/12/2020;dezembro;12;2020;76;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/12/2020;dezembro;12;2020;84;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/12/2020;dezembro;12;2020;62;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-19/12/2020;dezembro;12;2020;70;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-19/12/2020;dezembro;12;2020;82;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/12/2020;dezembro;12;2020;86;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-19/12/2020;dezembro;12;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-20/12/2020;dezembro;12;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/12/2020;dezembro;12;2020;55;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/12/2020;dezembro;12;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/12/2020;dezembro;12;2020;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-23/12/2020;dezembro;12;2020;67;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC
-24/12/2020;dezembro;12;2020;58;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-25/12/2020;dezembro;12;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/12/2020;dezembro;12;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/12/2020;dezembro;12;2020;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/12/2020;dezembro;12;2020;70;F;sim;Hospital Santo Antônio;Blumenau;SC
-30/12/2020;dezembro;12;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/12/2020;dezembro;12;2020;37;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/12/2020;dezembro;12;2020;59;F;não informado;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/12/2020;dezembro;12;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/12/2020;dezembro;12;2020;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-30/12/2020;dezembro;12;2020;75;M;sim;Hospital do Coração;Balneário Camboriú;SC
-31/12/2020;dezembro;12;2020;58;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-02/01/2021;janeiro;1;2021;86;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/01/2021;janeiro;1;2021;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-03/01/2021;janeiro;1;2021;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/01/2021;janeiro;1;2021;43;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/01/2021;janeiro;1;2021;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/01/2021;janeiro;1;2021;51;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-04/01/2021;janeiro;1;2021;95;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/01/2021;janeiro;1;2021;81;F;sim;não informado;Itajaí;SC
-06/01/2021;janeiro;1;2021;68;M;sim;não informado;Itajaí;SC
-06/01/2021;janeiro;1;2021;47;F;sim;não informado;Itajaí;SC
-07/01/2021;janeiro;1;2021;79;M;sim;não informado;Itajaí;SC
-07/01/2021;janeiro;1;2021;61;F;sim;não informado;Itajaí;SC
-07/01/2021;janeiro;1;2021;90;M;sim;não informado;Itajaí;SC
-09/01/2021;janeiro;1;2021;68;M;sim;Hospital do Coração;Balneário Camboriú;SC
-09/01/2021;janeiro;1;2021;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-11/01/2021;janeiro;1;2021;68;M;sim;não informado;Itajaí;SC
-11/01/2021;janeiro;1;2021;75;F;sim;não informado;Itajaí;SC
-12/01/2021;janeiro;1;2021;80;F;sim;não informado;Itajaí;SC
-12/01/2021;janeiro;1;2021;53;M;sim;não informado;Itajaí;SC
-12/01/2021;janeiro;1;2021;84;M;sim;não informado;Itajaí;SC
-13/01/2021;janeiro;1;2021;90;F;sim;não informado;Itajaí;SC
-13/01/2021;janeiro;1;2021;22;F;sim;não informado;Itajaí;SC
-14/01/2021;janeiro;1;2021;93;M;sim;não informado;Itajaí;SC
-14/01/2021;janeiro;1;2021;71;M;sim;não informado;Itajaí;SC
-14/01/2021;janeiro;1;2021;51;F;sim;não informado;Itajaí;SC
-14/01/2021;janeiro;1;2021;67;M;sim;não informado;Itajaí;SC
-17/01/2021;janeiro;1;2021;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-18/01/2021;janeiro;1;2021;91;F;sim;não informado;Itajaí;SC
-18/01/2021;janeiro;1;2021;80;F;sim;não informado;Itajaí;SC
-18/01/2021;janeiro;1;2021;68;M;sim;não informado;Itajaí;SC
-19/01/2021;janeiro;1;2021;59;M;sim;não informado;Itajaí;SC
-20/01/2021;janeiro;1;2021;66;F;sim;não informado;Itajaí;SC
-20/01/2021;janeiro;1;2021;56;M;sim;não informado;Itajaí;SC
-20/01/2021;janeiro;1;2021;78;F;sim;não informado;Itajaí;SC
-21/01/2021;janeiro;1;2021;69;M;sim;não informado;Itajaí;SC
-21/01/2021;janeiro;1;2021;91;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC
-21/01/2021;janeiro;1;2021;16;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/01/2021;janeiro;1;2021;49;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC
-22/01/2021;janeiro;1;2021;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-22/01/2021;janeiro;1;2021;76;F;sim;Hospital do Coração;Balneário Camboriú;SC
-23/01/2021;janeiro;1;2021;59;F;sim;não informado;Itajaí;SC
-23/01/2021;janeiro;1;2021;70;M;sim;não informado;Itajaí;SC
-23/01/2021;janeiro;1;2021;39;F;sim;não informado;Itajaí;SC
-23/01/2021;janeiro;1;2021;36;M;sim;não informado;Itajaí;SC
-23/01/2021;janeiro;1;2021;65;F;sim;não informado;Itajaí;SC
-24/01/2021;janeiro;1;2021;72;F;sim;Hospital Santo Antônio;Blumenau;SC
-24/01/2021;janeiro;1;2021;65;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/01/2021;janeiro;1;2021;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-26/01/2021;janeiro;1;2021;81;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-27/01/2021;janeiro;1;2021;61;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-27/01/2021;janeiro;1;2021;76;M;sim;Hospital da Unimed;Balneário Camboriú;SC
-29/01/2021;janeiro;1;2021;55;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/01/2021;janeiro;1;2021;63;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-29/01/2021;janeiro;1;2021;92;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-02/02/2021;fevereiro;2;2021;74;M;sim;não informado;Itajaí;SC
-02/02/2021;fevereiro;2;2021;66;M;sim;não informado;Itajaí;SC
-02/02/2021;fevereiro;2;2021;55;M;sim;não informado;Itajaí;SC
-02/02/2021;fevereiro;2;2021;64;M;sim;não informado;Itajaí;SC
-03/02/2021;fevereiro;2;2021;66;F;sim;não informado;Itajaí;SC
-06/02/2021;fevereiro;2;2021;63;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/02/2021;fevereiro;2;2021;91;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-06/02/2021;fevereiro;2;2021;57;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC
-06/02/2021;fevereiro;2;2021;80;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC
-09/02/2021;fevereiro;2;2021;26;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-12/02/2021;fevereiro;2;2021;91;F;sim;não informado;Itajaí;SC
-12/02/2021;fevereiro;2;2021;59;M;não;não informado;Itajaí;SC
-12/02/2021;fevereiro;2;2021;89;F;sim;não informado;Itajaí;SC
-12/02/2021;fevereiro;2;2021;45;F;sim;não informado;Itajaí;SC
-15/02/2021;fevereiro;2;2021;74;F;não;não informado;Itajaí;SC
-15/02/2021;fevereiro;2;2021;81;M;sim;não informado;Itajaí;SC
-17/02/2021;fevereiro;2;2021;32;M;sim;Hospital Azambuja ;Brusque;SC
-18/02/2021;fevereiro;2;2021;69;M;sim;não informado;Itajaí;SC
-18/02/2021;fevereiro;2;2021;92;M;sim;não informado;Itajaí;SC
-18/02/2021;fevereiro;2;2021;70;M;não;não informado;Itajaí;SC
-18/02/2021;fevereiro;2;2021;60;M;sim;não informado;Itajaí;SC
-19/02/2021;fevereiro;2;2021;65;M;sim;não informado;Itajaí;SC
-19/02/2021;fevereiro;2;2021;67;M;sim;não informado;Itajaí;SC
-19/02/2021;fevereiro;2;2021;69;M;sim;não informado;Itajaí;SC
-21/02/2021;fevereiro;2;2021;65;M;sim;não informado;Itajaí;SC
-24/02/2021;fevereiro;2;2021;76;F;sim;não informado;Itajaí;SC
-24/02/2021;fevereiro;2;2021;88;F;sim;não informado;Itajaí;SC
-24/02/2021;fevereiro;2;2021;68;M;sim;não informado;Itajaí;SC
-26/02/2021;fevereiro;2;2021;81;M;sim;não informado;Itajaí;SC
-26/02/2021;fevereiro;2;2021;61;F;sim;não informado;Itajaí;SC
-26/02/2021;fevereiro;2;2021;64;F;sim;não informado;Itajaí;SC
-26/02/2021;fevereiro;2;2021;64;F;sim;não informado;Itajaí;SC
-26/02/2021;fevereiro;2;2021;73;M;sim;não informado;Itajaí;SC
-27/02/2021;fevereiro;2;2021;69;F;sim;não informado;Itajaí;SC
-27/02/2021;fevereiro;2;2021;69;F;sim;não informado;Itajaí;SC
-27/02/2021;fevereiro;2;2021;80;F;sim;não informado;Itajaí;SC
-27/02/2021;fevereiro;2;2021;73;F;não;não informado;Itajaí;SC
-28/02/2021;fevereiro;2;2021;43;M;sim;não informado;Itajaí;SC
-28/02/2021;fevereiro;2;2021;63;M;sim;não informado;Itajaí;SC
-01/03/2021;março;3;2021;62;M;sim;não informado;Itajaí;SC
-01/03/2021;março;3;2021;72;M;não;não informado;Itajaí;SC
-01/03/2021;março;3;2021;33;F;sim;não informado;Itajaí;SC
-01/03/2021;março;3;2021;86;F;sim;não informado;Itajaí;SC
-01/03/2021;março;3;2021;56;M;não;não informado;Itajaí;SC
-02/03/2021;março;3;2021;71;F;sim;não informado;Itajaí;SC
-02/03/2021;março;3;2021;64;M;sim;não informado;Itajaí;SC
-02/03/2021;março;3;2021;60;M;sim;não informado;Itajaí;SC
-03/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC
-04/03/2021;março;3;2021;51;M;sim;não informado;Itajaí;SC
-04/03/2021;março;3;2021;68;M;sim;não informado;Itajaí;SC
-05/03/2021;março;3;2021;77;M;sim;não informado;Itajaí;SC
-05/03/2021;março;3;2021;69;M;sim;não informado;Itajaí;SC
-06/03/2021;março;3;2021;69;F;não;não informado;Itajaí;SC
-06/03/2021;março;3;2021;70;F;não;não informado;Itajaí;SC
-07/03/2021;março;3;2021;83;F;sim;não informado;Itajaí;SC
-07/03/2021;março;3;2021;52;F;sim;não informado;Itajaí;SC
-07/03/2021;março;3;2021;86;F;sim;não informado;Itajaí;SC
-07/03/2021;março;3;2021;70;M;sim;não informado;Itajaí;SC
-08/03/2021;março;3;2021;60;F;sim;não informado;Itajaí;SC
-08/03/2021;março;3;2021;75;F;sim;não informado;Itajaí;SC
-08/03/2021;março;3;2021;34;M;não;não informado;Itajaí;SC
-10/03/2021;março;3;2021;62;M;sim;não informado;Itajaí;SC
-10/03/2021;março;3;2021;60;M;sim;não informado;Itajaí;SC
-10/03/2021;março;3;2021;76;F;sim;não informado;Itajaí;SC
-10/03/2021;março;3;2021;30;F;sim;não informado;Itajaí;SC
-12/03/2021;março;3;2021;87;F;sim;não informado;Itajaí;SC
-12/03/2021;março;3;2021;55;M;sim;não informado;Itajaí;SC
-12/03/2021;março;3;2021;80;M;sim;não informado;Itajaí;SC
-12/03/2021;março;3;2021;50;M;não;não informado;Itajaí;SC
-12/03/2021;março;3;2021;62;M;sim;não informado;Itajaí;SC
-13/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC
-13/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC
-13/03/2021;março;3;2021;68;M;sim;não informado;Itajaí;SC
-13/03/2021;março;3;2021;66;F;sim;não informado;Itajaí;SC
-14/03/2021;março;3;2021;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/03/2021;março;3;2021;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-14/03/2021;março;3;2021;49;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC
-16/03/2021;março;3;2021;70;M;sim;não informado;Itajaí;SC
-16/03/2021;março;3;2021;82;F;sim;não informado;Itajaí;SC
-16/03/2021;março;3;2021;72;F;sim;não informado;Itajaí;SC
-17/03/2021;março;3;2021;59;M;não;não informado;Itajaí;SC
-17/03/2021;março;3;2021;84;M;sim;não informado;Itajaí;SC
-17/03/2021;março;3;2021;58;F;não;não informado;Itajaí;SC
-17/03/2021;março;3;2021;75;M;sim;não informado;Itajaí;SC
-17/03/2021;março;3;2021;73;M;sim;não informado;Itajaí;SC
-17/03/2021;março;3;2021;80;M;sim;não informado;Itajaí;SC
-17/03/2021;março;3;2021;46;M;sim;não informado;Itajaí;SC
-17/03/2021;março;3;2021;89;F;sim;não informado;Itajaí;SC
-18/03/2021;março;3;2021;51;M;não;não informado;Itajaí;SC
-18/03/2021;março;3;2021;78;M;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;89;F;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;70;F;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;54;M;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;81;F;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;62;F;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;75;F;sim;não informado;Itajaí;SC
-19/03/2021;março;3;2021;86;F;sim;não informado;Itajaí;SC
-20/03/2021;março;3;2021;38;F;sim;não informado;Itajaí;SC
-20/03/2021;março;3;2021;48;F;sim;não informado;Itajaí;SC
-20/03/2021;março;3;2021;87;F;sim;não informado;Itajaí;SC
-20/03/2021;março;3;2021;70;M;sim;não informado;Itajaí;SC
-20/03/2021;março;3;2021;54;F;não;não informado;Itajaí;SC
-21/03/2021;março;3;2021;57;M;sim;não informado;Itajaí;SC
-21/03/2021;março;3;2021;54;F;sim;não informado;Itajaí;SC
-22/03/2021;março;3;2021;56;M;sim;não informado;Itajaí;SC
-22/03/2021;março;3;2021;66;M;sim;não informado;Itajaí;SC
-22/03/2021;março;3;2021;75;M;sim;não informado;Itajaí;SC
-22/03/2021;março;3;2021;66;F;sim;não informado;Itajaí;SC
-23/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC
-23/03/2021;março;3;2021;56;M;sim;não informado;Itajaí;SC
-23/03/2021;março;3;2021;48;M;sim;não informado;Itajaí;SC
-23/03/2021;março;3;2021;59;M;sim;não informado;Itajaí;SC
-23/03/2021;março;3;2021;60;M;sim;não informado;Itajaí;SC
-23/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC
-24/03/2021;março;3;2021;46;M;sim;não informado;Itajaí;SC
-25/03/2021;março;3;2021;81;F;sim;não informado;Itajaí;SC
-25/03/2021;março;3;2021;37;F;sim;não informado;Itajaí;SC
-25/03/2021;março;3;2021;49;F;sim;não informado;Itajaí;SC
-25/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC
-25/03/2021;março;3;2021;83;M;sim;não informado;Itajaí;SC
-25/03/2021;março;3;2021;71;M;não;não informado;Itajaí;SC
-26/03/2021;março;3;2021;85;M;sim;não informado;Itajaí;SC
-26/03/2021;março;3;2021;89;M;sim;não informado;Itajaí;SC
-26/03/2021;março;3;2021;61;F;sim;não informado;Itajaí;SC
-26/03/2021;março;3;2021;70;F;sim;não informado;Itajaí;SC
-27/03/2021;março;3;2021;63;M;sim;não informado;Itajaí;SC
-27/03/2021;março;3;2021;60;M;não;não informado;Itajaí;SC
-28/03/2021;março;3;2021;41;M;sim;não informado;Itajaí;SC
-28/03/2021;março;3;2021;57;M;sim;não informado;Itajaí;SC
-28/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC
-28/03/2021;março;3;2021;69;M;sim;não informado;Itajaí;SC
-28/03/2021;março;3;2021;53;M;não;não informado;Itajaí;SC
-29/03/2021;março;3;2021;58;M;sim;não informado;Itajaí;SC
-29/03/2021;março;3;2021;77;M;sim;não informado;Itajaí;SC
-29/03/2021;março;3;2021;67;M;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;91;F;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;85;F;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;69;F;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;53;M;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;48;M;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;45;M;sim;não informado;Itajaí;SC
-30/03/2021;março;3;2021;80;F;sim;não informado;Itajaí;SC
-31/03/2021;março;3;2021;64;M;sim;não informado;Itajaí;SC
-31/03/2021;março;3;2021;67;M;sim;não informado;Itajaí;SC
-31/03/2021;março;3;2021;44;F;sim;não informado;Itajaí;SC
-31/03/2021;março;3;2021;62;F;sim;não informado;Itajaí;SC
-31/03/2021;março;3;2021;78;F;sim;não informado;Itajaí;SC
-01/04/2021;abril;4;2021;55;F;sim;não informado;Itajaí;SC
-01/04/2021;abril;4;2021;75;F;sim;não informado;Itajaí;SC
-01/04/2021;abril;4;2021;68;M;sim;não informado;Itajaí;SC
-02/04/2021;abril;4;2021;76;M;sim;não informado;Itajaí;SC
-02/04/2021;abril;4;2021;58;M;sim;não informado;Itajaí;SC
-02/04/2021;abril;4;2021;72;F;sim;não informado;Itajaí;SC
-02/04/2021;abril;4;2021;57;M;sim;não informado;Itajaí;SC
-02/04/2021;abril;4;2021;68;M;sim;não informado;Itajaí;SC
-02/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC
-03/04/2021;abril;4;2021;91;M;sim;não informado;Itajaí;SC
-03/04/2021;abril;4;2021;77;M;sim;não informado;Itajaí;SC
-04/04/2021;abril;4;2021;46;F;sim;não informado;Itajaí;SC
-04/04/2021;abril;4;2021;55;F;sim;não informado;Itajaí;SC
-04/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC
-04/04/2021;abril;4;2021;80;F;sim;não informado;Itajaí;SC
-05/04/2021;abril;4;2021;60;M;sim;não informado;Itajaí;SC
-05/04/2021;abril;4;2021;88;M;sim;não informado;Itajaí;SC
-05/04/2021;abril;4;2021;73;F;sim;não informado;Itajaí;SC
-05/04/2021;abril;4;2021;77;F;sim;não informado;Itajaí;SC
-05/04/2021;abril;4;2021;83;F;sim;não informado;Itajaí;SC
-05/04/2021;abril;4;2021;54;M;sim;não informado;Itajaí;SC
-06/04/2021;abril;4;2021;41;F;sim;não informado;Itajaí;SC
-06/04/2021;abril;4;2021;41;F;sim;não informado;Itajaí;SC
-06/04/2021;abril;4;2021;74;F;sim;não informado;Itajaí;SC
-06/04/2021;abril;4;2021;81;M;sim;não informado;Itajaí;SC
-06/04/2021;abril;4;2021;70;F;sim;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;15;M;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;49;M;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;62;M;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;81;F;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;93;F;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;89;F;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;69;F;não informado;não informado;Itajaí;SC
-07/04/2021;abril;4;2021;41;M;não informado;não informado;Itajaí;SC
-08/04/2021;abril;4;2021;68;M;sim;não informado;Itajaí;SC
-08/04/2021;abril;4;2021;81;M;sim;não informado;Itajaí;SC
-08/04/2021;abril;4;2021;83;M;sim;não informado;Itajaí;SC
-08/04/2021;abril;4;2021;66;F;sim;não informado;Itajaí;SC
-09/04/2021;abril;4;2021;89;F;sim;não informado;Itajaí;SC
-09/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC
-09/04/2021;abril;4;2021;56;F;sim;não informado;Itajaí;SC
-09/04/2021;abril;4;2021;52;F;sim;não informado;Itajaí;SC
-09/04/2021;abril;4;2021;49;M;sim;não informado;Itajaí;SC
-09/04/2021;abril;4;2021;59;M;sim;não informado;Itajaí;SC
-10/04/2021;abril;4;2021;42;F;sim;não informado;Itajaí;SC
-10/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC
-12/04/2021;abril;4;2021;87;M;sim;não informado;Itajaí;SC
-12/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC
-12/04/2021;abril;4;2021;57;M;sim;não informado;Itajaí;SC
-12/04/2021;abril;4;2021;49;M;sim;não informado;Itajaí;SC
-12/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC
-13/04/2021;abril;4;2021;70;M;não;não informado;Itajaí;SC
-13/04/2021;abril;4;2021;42;F;não;não informado;Itajaí;SC
-13/04/2021;abril;4;2021;40;F;sim;não informado;Itajaí;SC
-13/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC
-14/04/2021;abril;4;2021;78;M;sim;não informado;Itajaí;SC
-14/04/2021;abril;4;2021;67;M;sim;não informado;Itajaí;SC
-14/04/2021;abril;4;2021;93;F;sim;não informado;Itajaí;SC
-15/04/2021;abril;4;2021;61;M;não;não informado;Itajaí;SC
-15/04/2021;abril;4;2021;62;M;sim;não informado;Itajaí;SC
-15/04/2021;abril;4;2021;51;M;sim;não informado;Itajaí;SC
-15/04/2021;abril;4;2021;73;F;sim;não informado;Itajaí;SC
-15/04/2021;abril;4;2021;73;M;sim;não informado;Itajaí;SC
-16/04/2021;abril;4;2021;59;F;sim;não informado;Itajaí;SC
-16/04/2021;abril;4;2021;58;F;sim;não informado;Itajaí;SC
-16/04/2021;abril;4;2021;64;M;sim;não informado;Itajaí;SC
-17/04/2021;abril;4;2021;51;M;sim;não informado;Itajaí;SC
-18/04/2021;abril;4;2021;79;M;sim;não informado;Itajaí;SC
-18/04/2021;abril;4;2021;75;M;sim;não informado;Itajaí;SC
-19/04/2021;abril;4;2021;32;F;sim;não informado;Itajaí;SC
-19/04/2021;abril;4;2021;59;M;sim;não informado;Itajaí;SC
-19/04/2021;abril;4;2021;84;M;sim;não informado;Itajaí;SC
-19/04/2021;abril;4;2021;66;F;sim;não informado;Itajaí;SC
-20/04/2021;abril;4;2021;80;F;sim;não informado;Itajaí;SC
-21/04/2021;abril;4;2021;88;F;sim;não informado;Itajaí;SC
-22/04/2021;abril;4;2021;37;M;sim;não informado;Itajaí;SC
-23/04/2021;abril;4;2021;64;F;sim;não informado;Itajaí;SC
-23/04/2021;abril;4;2021;67;F;sim;não informado;Itajaí;SC
-23/04/2021;abril;4;2021;68;F;sim;não informado;Itajaí;SC
-23/04/2021;abril;4;2021;62;F;não;não informado;Itajaí;SC
-25/04/2021;abril;4;2021;53;F;sim;não informado;Itajaí;SC
-25/04/2021;abril;4;2021;55;F;sim;não informado;Itajaí;SC
-25/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC
-26/04/2021;abril;4;2021;70;F;sim;não informado;Itajaí;SC
-26/04/2021;abril;4;2021;74;M;sim;não informado;Itajaí;SC
-27/04/2021;abril;4;2021;53;M;sim;não informado;Itajaí;SC
-27/04/2021;abril;4;2021;76;M;sim;não informado;Itajaí;SC
-27/04/2021;abril;4;2021;40;M;sim;não informado;Itajaí;SC
-27/04/2021;abril;4;2021;42;M;sim;não informado;Itajaí;SC
-27/04/2021;abril;4;2021;70;M;sim;não informado;Itajaí;SC
-27/04/2021;abril;4;2021;42;M;não;não informado;Itajaí;SC
-28/04/2021;abril;4;2021;65;M;não;não informado;Itajaí;SC
-28/04/2021;abril;4;2021;57;M;não;não informado;Itajaí;SC
-01/05/2021;maio;5;2021;64;M;sim;não informado;Itajaí;SC
-02/05/2021;maio;5;2021;35;F;sim;não informado;Itajaí;SC
-02/05/2021;maio;5;2021;67;F;sim;não informado;Itajaí;SC
-03/05/2021;maio;5;2021;80;M;sim;não informado;Itajaí;SC
-03/05/2021;maio;5;2021;67;M;sim;não informado;Itajaí;SC
-03/05/2021;maio;5;2021;51;M;sim;não informado;Itajaí;SC
-03/05/2021;maio;5;2021;50;M;sim;não informado;Itajaí;SC
-03/05/2021;maio;5;2021;57;M;sim;não informado;Itajaí;SC
-03/05/2021;maio;5;2021;67;F;sim;não informado;Itajaí;SC
-04/05/2021;maio;5;2021;69;F;sim;não informado;Itajaí;SC
-04/05/2021;maio;5;2021;68;M;sim;não informado;Itajaí;SC
-05/05/2021;maio;5;2021;86;M;sim;não informado;Itajaí;SC
-05/05/2021;maio;5;2021;62;M;sim;não informado;Itajaí;SC
-06/05/2021;maio;5;2021;40;M;sim;não informado;Itajaí;SC
-07/05/2021;maio;5;2021;59;M;sim;não informado;Itajaí;SC
-08/05/2021;maio;5;2021;47;M;sim;não informado;Itajaí;SC
-09/05/2021;maio;5;2021;43;F;sim;não informado;Itajaí;SC
+29/08/2020;agosto;8;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/08/2020;agosto;8;2020;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+31/08/2020;agosto;8;2020;43;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC;
+31/08/2020;agosto;8;2020;92;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+31/08/2020;agosto;8;2020;85;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/09/2020;setembro;9;2020;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+09/09/2020;setembro;9;2020;87;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/09/2020;setembro;9;2020;75;F;sim;Hospital Florianópolis;Florianópolis;SC;
+15/09/2020;setembro;9;2020;67;M;sim;Hospital Santa Isabel;Blumenau;SC;
+15/09/2020;setembro;9;2020;69;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/09/2020;setembro;9;2020;84;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/09/2020;setembro;9;2020;61;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/09/2020;setembro;9;2020;47;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+22/09/2020;setembro;9;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/09/2020;setembro;9;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/09/2020;setembro;9;2020;67;F;sim;Centro Integrado de Saúde;Itajaí;SC;
+03/10/2020;outubro;10;2020;64;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/10/2020;outubro;10;2020;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+08/10/2020;outubro;10;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+15/10/2020;outubro;10;2020;67;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/10/2020;outubro;10;2020;69;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+20/10/2020;outubro;10;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/10/2020;outubro;10;2020;79;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/10/2020;outubro;10;2020;0;F;não;Hospital Pequeno Anjo;Itajaí;SC;
+29/10/2020;outubro;10;2020;70;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+01/11/2020;novembro;11;2020;43;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+01/11/2020;novembro;11;2020;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/11/2020;novembro;11;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/11/2020;novembro;11;2020;48;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC;
+11/11/2020;novembro;11;2020;71;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/11/2020;novembro;11;2020;68;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/11/2020;novembro;11;2020;94;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/11/2020;novembro;11;2020;70;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/11/2020;novembro;11;2020;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/11/2020;novembro;11;2020;62;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/11/2020;novembro;11;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/11/2020;novembro;11;2020;95;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/11/2020;novembro;11;2020;75;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/11/2020;novembro;11;2020;72;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/11/2020;novembro;11;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+24/11/2020;novembro;11;2020;68;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+25/11/2020;novembro;11;2020;65;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+26/11/2020;novembro;11;2020;73;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC;
+26/11/2020;novembro;11;2020;83;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+27/11/2020;novembro;11;2020;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+28/11/2020;novembro;11;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/11/2020;novembro;11;2020;67;M;sim;Centro Integrado de Saúde;Itajaí;SC;
+01/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+01/12/2020;dezembro;12;2020;66;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC;
+02/12/2020;dezembro;12;2020;66;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+02/12/2020;dezembro;12;2020;54;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/12/2020;dezembro;12;2020;84;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+03/12/2020;dezembro;12;2020;65;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+04/12/2020;dezembro;12;2020;88;M;não;Hospital da Unimed;Balneário Camboriú;SC;
+04/12/2020;dezembro;12;2020;75;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+05/12/2020;dezembro;12;2020;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+05/12/2020;dezembro;12;2020;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/12/2020;dezembro;12;2020;64;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/12/2020;dezembro;12;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/12/2020;dezembro;12;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/12/2020;dezembro;12;2020;60;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+07/12/2020;dezembro;12;2020;93;F;sim;Hospital da Unimed;Balneário Camboriú;SC;
+07/12/2020;dezembro;12;2020;80;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+09/12/2020;dezembro;12;2020;53;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+10/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+10/12/2020;dezembro;12;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/12/2020;dezembro;12;2020;72;M;sim;não informado;Itajaí;SC;
+11/12/2020;dezembro;12;2020;83;M;sim;não informado;Itajaí;SC;
+12/12/2020;dezembro;12;2020;57;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/12/2020;dezembro;12;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/12/2020;dezembro;12;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/12/2020;dezembro;12;2020;94;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/12/2020;dezembro;12;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+13/12/2020;dezembro;12;2020;64;M;sim;Unidade Pronto Atendimento - CIS;Itajaí;SC;
+15/12/2020;dezembro;12;2020;70;F;sim;não informado;Itajaí;SC;
+15/12/2020;dezembro;12;2020;52;M;não;não informado;Itajaí;SC;
+15/12/2020;dezembro;12;2020;71;F;sim;não informado;Itajaí;SC;
+15/12/2020;dezembro;12;2020;78;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/12/2020;dezembro;12;2020;46;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/12/2020;dezembro;12;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/12/2020;dezembro;12;2020;71;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/12/2020;dezembro;12;2020;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+17/12/2020;dezembro;12;2020;89;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/12/2020;dezembro;12;2020;66;M;sim;não informado;Itajaí;SC;
+18/12/2020;dezembro;12;2020;85;F;sim;não informado;Itajaí;SC;
+18/12/2020;dezembro;12;2020;92;F;sim;não informado;Itajaí;SC;
+18/12/2020;dezembro;12;2020;42;F;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC;
+18/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/12/2020;dezembro;12;2020;76;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/12/2020;dezembro;12;2020;84;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/12/2020;dezembro;12;2020;62;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+19/12/2020;dezembro;12;2020;70;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+19/12/2020;dezembro;12;2020;82;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/12/2020;dezembro;12;2020;86;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+19/12/2020;dezembro;12;2020;85;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/12/2020;dezembro;12;2020;59;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+20/12/2020;dezembro;12;2020;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/12/2020;dezembro;12;2020;55;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/12/2020;dezembro;12;2020;88;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/12/2020;dezembro;12;2020;72;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+23/12/2020;dezembro;12;2020;67;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC;
+24/12/2020;dezembro;12;2020;58;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+25/12/2020;dezembro;12;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/12/2020;dezembro;12;2020;56;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/12/2020;dezembro;12;2020;73;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/12/2020;dezembro;12;2020;70;F;sim;Hospital Santo Antônio;Blumenau;SC;
+30/12/2020;dezembro;12;2020;62;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/12/2020;dezembro;12;2020;37;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/12/2020;dezembro;12;2020;59;F;não informado;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/12/2020;dezembro;12;2020;75;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/12/2020;dezembro;12;2020;53;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+30/12/2020;dezembro;12;2020;75;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+31/12/2020;dezembro;12;2020;58;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+02/01/2021;janeiro;1;2021;86;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/01/2021;janeiro;1;2021;52;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+03/01/2021;janeiro;1;2021;64;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/01/2021;janeiro;1;2021;43;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/01/2021;janeiro;1;2021;74;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/01/2021;janeiro;1;2021;51;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+04/01/2021;janeiro;1;2021;95;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/01/2021;janeiro;1;2021;81;F;sim;não informado;Itajaí;SC;
+06/01/2021;janeiro;1;2021;68;M;sim;não informado;Itajaí;SC;
+06/01/2021;janeiro;1;2021;47;F;sim;não informado;Itajaí;SC;
+07/01/2021;janeiro;1;2021;79;M;sim;não informado;Itajaí;SC;
+07/01/2021;janeiro;1;2021;61;F;sim;não informado;Itajaí;SC;
+07/01/2021;janeiro;1;2021;90;M;sim;não informado;Itajaí;SC;
+09/01/2021;janeiro;1;2021;68;M;sim;Hospital do Coração;Balneário Camboriú;SC;
+09/01/2021;janeiro;1;2021;63;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+11/01/2021;janeiro;1;2021;68;M;sim;não informado;Itajaí;SC;
+11/01/2021;janeiro;1;2021;75;F;sim;não informado;Itajaí;SC;
+12/01/2021;janeiro;1;2021;80;F;sim;não informado;Itajaí;SC;
+12/01/2021;janeiro;1;2021;53;M;sim;não informado;Itajaí;SC;
+12/01/2021;janeiro;1;2021;84;M;sim;não informado;Itajaí;SC;
+13/01/2021;janeiro;1;2021;90;F;sim;não informado;Itajaí;SC;
+13/01/2021;janeiro;1;2021;22;F;sim;não informado;Itajaí;SC;
+14/01/2021;janeiro;1;2021;93;M;sim;não informado;Itajaí;SC;
+14/01/2021;janeiro;1;2021;71;M;sim;não informado;Itajaí;SC;
+14/01/2021;janeiro;1;2021;51;F;sim;não informado;Itajaí;SC;
+14/01/2021;janeiro;1;2021;67;M;sim;não informado;Itajaí;SC;
+17/01/2021;janeiro;1;2021;55;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+18/01/2021;janeiro;1;2021;91;F;sim;não informado;Itajaí;SC;
+18/01/2021;janeiro;1;2021;80;F;sim;não informado;Itajaí;SC;
+18/01/2021;janeiro;1;2021;68;M;sim;não informado;Itajaí;SC;
+19/01/2021;janeiro;1;2021;59;M;sim;não informado;Itajaí;SC;
+20/01/2021;janeiro;1;2021;66;F;sim;não informado;Itajaí;SC;
+20/01/2021;janeiro;1;2021;56;M;sim;não informado;Itajaí;SC;
+20/01/2021;janeiro;1;2021;78;F;sim;não informado;Itajaí;SC;
+21/01/2021;janeiro;1;2021;69;M;sim;não informado;Itajaí;SC;
+21/01/2021;janeiro;1;2021;91;F;não;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+21/01/2021;janeiro;1;2021;16;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/01/2021;janeiro;1;2021;49;M;sim;Unidade Pronto Atendimento Cordeiros;Itajaí;SC;
+22/01/2021;janeiro;1;2021;81;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+22/01/2021;janeiro;1;2021;76;F;sim;Hospital do Coração;Balneário Camboriú;SC;
+23/01/2021;janeiro;1;2021;59;F;sim;não informado;Itajaí;SC;
+23/01/2021;janeiro;1;2021;70;M;sim;não informado;Itajaí;SC;
+23/01/2021;janeiro;1;2021;39;F;sim;não informado;Itajaí;SC;
+23/01/2021;janeiro;1;2021;36;M;sim;não informado;Itajaí;SC;
+23/01/2021;janeiro;1;2021;65;F;sim;não informado;Itajaí;SC;
+24/01/2021;janeiro;1;2021;72;F;sim;Hospital Santo Antônio;Blumenau;SC;
+24/01/2021;janeiro;1;2021;65;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/01/2021;janeiro;1;2021;68;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+26/01/2021;janeiro;1;2021;81;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+27/01/2021;janeiro;1;2021;61;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+27/01/2021;janeiro;1;2021;76;M;sim;Hospital da Unimed;Balneário Camboriú;SC;
+29/01/2021;janeiro;1;2021;55;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/01/2021;janeiro;1;2021;63;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+29/01/2021;janeiro;1;2021;92;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+02/02/2021;fevereiro;2;2021;74;M;sim;não informado;Itajaí;SC;
+02/02/2021;fevereiro;2;2021;66;M;sim;não informado;Itajaí;SC;
+02/02/2021;fevereiro;2;2021;55;M;sim;não informado;Itajaí;SC;
+02/02/2021;fevereiro;2;2021;64;M;sim;não informado;Itajaí;SC;
+03/02/2021;fevereiro;2;2021;66;F;sim;não informado;Itajaí;SC;
+06/02/2021;fevereiro;2;2021;63;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/02/2021;fevereiro;2;2021;91;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+06/02/2021;fevereiro;2;2021;57;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC;
+06/02/2021;fevereiro;2;2021;80;M;sim;Hospital Ruth Cardoso;Balneário Camboriú;SC;
+09/02/2021;fevereiro;2;2021;26;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+12/02/2021;fevereiro;2;2021;91;F;sim;não informado;Itajaí;SC;
+12/02/2021;fevereiro;2;2021;59;M;não;não informado;Itajaí;SC;
+12/02/2021;fevereiro;2;2021;89;F;sim;não informado;Itajaí;SC;
+12/02/2021;fevereiro;2;2021;45;F;sim;não informado;Itajaí;SC;
+15/02/2021;fevereiro;2;2021;74;F;não;não informado;Itajaí;SC;
+15/02/2021;fevereiro;2;2021;81;M;sim;não informado;Itajaí;SC;
+17/02/2021;fevereiro;2;2021;32;M;sim;Hospital Azambuja ;Brusque;SC;
+18/02/2021;fevereiro;2;2021;69;M;sim;não informado;Itajaí;SC;
+18/02/2021;fevereiro;2;2021;92;M;sim;não informado;Itajaí;SC;
+18/02/2021;fevereiro;2;2021;70;M;não;não informado;Itajaí;SC;
+18/02/2021;fevereiro;2;2021;60;M;sim;não informado;Itajaí;SC;
+19/02/2021;fevereiro;2;2021;65;M;sim;não informado;Itajaí;SC;
+19/02/2021;fevereiro;2;2021;67;M;sim;não informado;Itajaí;SC;
+19/02/2021;fevereiro;2;2021;69;M;sim;não informado;Itajaí;SC;
+21/02/2021;fevereiro;2;2021;65;M;sim;não informado;Itajaí;SC;
+24/02/2021;fevereiro;2;2021;76;F;sim;não informado;Itajaí;SC;
+24/02/2021;fevereiro;2;2021;88;F;sim;não informado;Itajaí;SC;
+24/02/2021;fevereiro;2;2021;68;M;sim;não informado;Itajaí;SC;
+26/02/2021;fevereiro;2;2021;81;M;sim;não informado;Itajaí;SC;
+26/02/2021;fevereiro;2;2021;61;F;sim;não informado;Itajaí;SC;
+26/02/2021;fevereiro;2;2021;64;F;sim;não informado;Itajaí;SC;
+26/02/2021;fevereiro;2;2021;64;F;sim;não informado;Itajaí;SC;
+26/02/2021;fevereiro;2;2021;73;M;sim;não informado;Itajaí;SC;
+27/02/2021;fevereiro;2;2021;69;F;sim;não informado;Itajaí;SC;
+27/02/2021;fevereiro;2;2021;69;F;sim;não informado;Itajaí;SC;
+27/02/2021;fevereiro;2;2021;80;F;sim;não informado;Itajaí;SC;
+27/02/2021;fevereiro;2;2021;73;F;não;não informado;Itajaí;SC;
+28/02/2021;fevereiro;2;2021;43;M;sim;não informado;Itajaí;SC;
+28/02/2021;fevereiro;2;2021;63;M;sim;não informado;Itajaí;SC;
+01/03/2021;março;3;2021;62;M;sim;não informado;Itajaí;SC;
+01/03/2021;março;3;2021;72;M;não;não informado;Itajaí;SC;
+01/03/2021;março;3;2021;33;F;sim;não informado;Itajaí;SC;
+01/03/2021;março;3;2021;86;F;sim;não informado;Itajaí;SC;
+01/03/2021;março;3;2021;56;M;não;não informado;Itajaí;SC;
+02/03/2021;março;3;2021;71;F;sim;não informado;Itajaí;SC;
+02/03/2021;março;3;2021;64;M;sim;não informado;Itajaí;SC;
+02/03/2021;março;3;2021;60;M;sim;não informado;Itajaí;SC;
+03/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC;
+04/03/2021;março;3;2021;51;M;sim;não informado;Itajaí;SC;
+04/03/2021;março;3;2021;68;M;sim;não informado;Itajaí;SC;
+05/03/2021;março;3;2021;77;M;sim;não informado;Itajaí;SC;
+05/03/2021;março;3;2021;69;M;sim;não informado;Itajaí;SC;
+06/03/2021;março;3;2021;69;F;não;não informado;Itajaí;SC;
+06/03/2021;março;3;2021;70;F;não;não informado;Itajaí;SC;
+07/03/2021;março;3;2021;83;F;sim;não informado;Itajaí;SC;
+07/03/2021;março;3;2021;52;F;sim;não informado;Itajaí;SC;
+07/03/2021;março;3;2021;86;F;sim;não informado;Itajaí;SC;
+07/03/2021;março;3;2021;70;M;sim;não informado;Itajaí;SC;
+08/03/2021;março;3;2021;60;F;sim;não informado;Itajaí;SC;
+08/03/2021;março;3;2021;75;F;sim;não informado;Itajaí;SC;
+08/03/2021;março;3;2021;34;M;não;não informado;Itajaí;SC;
+10/03/2021;março;3;2021;62;M;sim;não informado;Itajaí;SC;
+10/03/2021;março;3;2021;60;M;sim;não informado;Itajaí;SC;
+10/03/2021;março;3;2021;76;F;sim;não informado;Itajaí;SC;
+10/03/2021;março;3;2021;30;F;sim;não informado;Itajaí;SC;
+12/03/2021;março;3;2021;87;F;sim;não informado;Itajaí;SC;
+12/03/2021;março;3;2021;55;M;sim;não informado;Itajaí;SC;
+12/03/2021;março;3;2021;80;M;sim;não informado;Itajaí;SC;
+12/03/2021;março;3;2021;50;M;não;não informado;Itajaí;SC;
+12/03/2021;março;3;2021;62;M;sim;não informado;Itajaí;SC;
+13/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC;
+13/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC;
+13/03/2021;março;3;2021;68;M;sim;não informado;Itajaí;SC;
+13/03/2021;março;3;2021;66;F;sim;não informado;Itajaí;SC;
+14/03/2021;março;3;2021;69;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/03/2021;março;3;2021;74;M;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+14/03/2021;março;3;2021;49;F;sim;Hospital Marieta Konder Bornhausen;Itajaí;SC;
+16/03/2021;março;3;2021;70;M;sim;não informado;Itajaí;SC;
+16/03/2021;março;3;2021;82;F;sim;não informado;Itajaí;SC;
+16/03/2021;março;3;2021;72;F;sim;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;59;M;não;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;84;M;sim;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;58;F;não;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;75;M;sim;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;73;M;sim;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;80;M;sim;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;46;M;sim;não informado;Itajaí;SC;
+17/03/2021;março;3;2021;89;F;sim;não informado;Itajaí;SC;
+18/03/2021;março;3;2021;51;M;não;não informado;Itajaí;SC;
+18/03/2021;março;3;2021;78;M;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;89;F;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;70;F;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;54;M;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;81;F;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;62;F;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;75;F;sim;não informado;Itajaí;SC;
+19/03/2021;março;3;2021;86;F;sim;não informado;Itajaí;SC;
+20/03/2021;março;3;2021;38;F;sim;não informado;Itajaí;SC;
+20/03/2021;março;3;2021;48;F;sim;não informado;Itajaí;SC;
+20/03/2021;março;3;2021;87;F;sim;não informado;Itajaí;SC;
+20/03/2021;março;3;2021;70;M;sim;não informado;Itajaí;SC;
+20/03/2021;março;3;2021;54;F;não;não informado;Itajaí;SC;
+21/03/2021;março;3;2021;57;M;sim;não informado;Itajaí;SC;
+21/03/2021;março;3;2021;54;F;sim;não informado;Itajaí;SC;
+22/03/2021;março;3;2021;56;M;sim;não informado;Itajaí;SC;
+22/03/2021;março;3;2021;66;M;sim;não informado;Itajaí;SC;
+22/03/2021;março;3;2021;75;M;sim;não informado;Itajaí;SC;
+22/03/2021;março;3;2021;66;F;sim;não informado;Itajaí;SC;
+23/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC;
+23/03/2021;março;3;2021;56;M;sim;não informado;Itajaí;SC;
+23/03/2021;março;3;2021;48;M;sim;não informado;Itajaí;SC;
+23/03/2021;março;3;2021;59;M;sim;não informado;Itajaí;SC;
+23/03/2021;março;3;2021;60;M;sim;não informado;Itajaí;SC;
+23/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC;
+24/03/2021;março;3;2021;46;M;sim;não informado;Itajaí;SC;
+25/03/2021;março;3;2021;81;F;sim;não informado;Itajaí;SC;
+25/03/2021;março;3;2021;37;F;sim;não informado;Itajaí;SC;
+25/03/2021;março;3;2021;49;F;sim;não informado;Itajaí;SC;
+25/03/2021;março;3;2021;61;M;sim;não informado;Itajaí;SC;
+25/03/2021;março;3;2021;83;M;sim;não informado;Itajaí;SC;
+25/03/2021;março;3;2021;71;M;não;não informado;Itajaí;SC;
+26/03/2021;março;3;2021;85;M;sim;não informado;Itajaí;SC;
+26/03/2021;março;3;2021;89;M;sim;não informado;Itajaí;SC;
+26/03/2021;março;3;2021;61;F;sim;não informado;Itajaí;SC;
+26/03/2021;março;3;2021;70;F;sim;não informado;Itajaí;SC;
+27/03/2021;março;3;2021;63;M;sim;não informado;Itajaí;SC;
+27/03/2021;março;3;2021;60;M;não;não informado;Itajaí;SC;
+28/03/2021;março;3;2021;41;M;sim;não informado;Itajaí;SC;
+28/03/2021;março;3;2021;57;M;sim;não informado;Itajaí;SC;
+28/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC;
+28/03/2021;março;3;2021;69;M;sim;não informado;Itajaí;SC;
+28/03/2021;março;3;2021;53;M;não;não informado;Itajaí;SC;
+29/03/2021;março;3;2021;58;M;sim;não informado;Itajaí;SC;
+29/03/2021;março;3;2021;77;M;sim;não informado;Itajaí;SC;
+29/03/2021;março;3;2021;67;M;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;91;F;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;85;F;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;69;F;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;53;M;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;48;M;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;76;M;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;45;M;sim;não informado;Itajaí;SC;
+30/03/2021;março;3;2021;80;F;sim;não informado;Itajaí;SC;
+31/03/2021;março;3;2021;64;M;sim;não informado;Itajaí;SC;
+31/03/2021;março;3;2021;67;M;sim;não informado;Itajaí;SC;
+31/03/2021;março;3;2021;44;F;sim;não informado;Itajaí;SC;
+31/03/2021;março;3;2021;62;F;sim;não informado;Itajaí;SC;
+31/03/2021;março;3;2021;78;F;sim;não informado;Itajaí;SC;
+01/04/2021;abril;4;2021;55;F;sim;não informado;Itajaí;SC;
+01/04/2021;abril;4;2021;75;F;sim;não informado;Itajaí;SC;
+01/04/2021;abril;4;2021;68;M;sim;não informado;Itajaí;SC;
+02/04/2021;abril;4;2021;76;M;sim;não informado;Itajaí;SC;
+02/04/2021;abril;4;2021;58;M;sim;não informado;Itajaí;SC;
+02/04/2021;abril;4;2021;72;F;sim;não informado;Itajaí;SC;
+02/04/2021;abril;4;2021;57;M;sim;não informado;Itajaí;SC;
+02/04/2021;abril;4;2021;68;M;sim;não informado;Itajaí;SC;
+02/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC;
+03/04/2021;abril;4;2021;91;M;sim;não informado;Itajaí;SC;
+03/04/2021;abril;4;2021;77;M;sim;não informado;Itajaí;SC;
+04/04/2021;abril;4;2021;46;F;sim;não informado;Itajaí;SC;
+04/04/2021;abril;4;2021;55;F;sim;não informado;Itajaí;SC;
+04/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC;
+04/04/2021;abril;4;2021;80;F;sim;não informado;Itajaí;SC;
+05/04/2021;abril;4;2021;60;M;sim;não informado;Itajaí;SC;
+05/04/2021;abril;4;2021;88;M;sim;não informado;Itajaí;SC;
+05/04/2021;abril;4;2021;73;F;sim;não informado;Itajaí;SC;
+05/04/2021;abril;4;2021;77;F;sim;não informado;Itajaí;SC;
+05/04/2021;abril;4;2021;83;F;sim;não informado;Itajaí;SC;
+05/04/2021;abril;4;2021;54;M;sim;não informado;Itajaí;SC;
+06/04/2021;abril;4;2021;41;F;sim;não informado;Itajaí;SC;
+06/04/2021;abril;4;2021;41;F;sim;não informado;Itajaí;SC;
+06/04/2021;abril;4;2021;74;F;sim;não informado;Itajaí;SC;
+06/04/2021;abril;4;2021;81;M;sim;não informado;Itajaí;SC;
+06/04/2021;abril;4;2021;70;F;sim;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;15;M;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;49;M;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;62;M;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;81;F;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;93;F;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;89;F;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;69;F;não informado;não informado;Itajaí;SC;
+07/04/2021;abril;4;2021;41;M;não informado;não informado;Itajaí;SC;
+08/04/2021;abril;4;2021;68;M;sim;não informado;Itajaí;SC;
+08/04/2021;abril;4;2021;81;M;sim;não informado;Itajaí;SC;
+08/04/2021;abril;4;2021;83;M;sim;não informado;Itajaí;SC;
+08/04/2021;abril;4;2021;66;F;sim;não informado;Itajaí;SC;
+09/04/2021;abril;4;2021;89;F;sim;não informado;Itajaí;SC;
+09/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC;
+09/04/2021;abril;4;2021;56;F;sim;não informado;Itajaí;SC;
+09/04/2021;abril;4;2021;52;F;sim;não informado;Itajaí;SC;
+09/04/2021;abril;4;2021;49;M;sim;não informado;Itajaí;SC;
+09/04/2021;abril;4;2021;59;M;sim;não informado;Itajaí;SC;
+10/04/2021;abril;4;2021;42;F;sim;não informado;Itajaí;SC;
+10/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC;
+12/04/2021;abril;4;2021;87;M;sim;não informado;Itajaí;SC;
+12/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC;
+12/04/2021;abril;4;2021;57;M;sim;não informado;Itajaí;SC;
+12/04/2021;abril;4;2021;49;M;sim;não informado;Itajaí;SC;
+12/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC;
+13/04/2021;abril;4;2021;70;M;não;não informado;Itajaí;SC;
+13/04/2021;abril;4;2021;42;F;não;não informado;Itajaí;SC;
+13/04/2021;abril;4;2021;40;F;sim;não informado;Itajaí;SC;
+13/04/2021;abril;4;2021;65;F;sim;não informado;Itajaí;SC;
+14/04/2021;abril;4;2021;78;M;sim;não informado;Itajaí;SC;
+14/04/2021;abril;4;2021;67;M;sim;não informado;Itajaí;SC;
+14/04/2021;abril;4;2021;93;F;sim;não informado;Itajaí;SC;
+15/04/2021;abril;4;2021;61;M;não;não informado;Itajaí;SC;
+15/04/2021;abril;4;2021;62;M;sim;não informado;Itajaí;SC;
+15/04/2021;abril;4;2021;51;M;sim;não informado;Itajaí;SC;
+15/04/2021;abril;4;2021;73;F;sim;não informado;Itajaí;SC;
+15/04/2021;abril;4;2021;73;M;sim;não informado;Itajaí;SC;
+16/04/2021;abril;4;2021;59;F;sim;não informado;Itajaí;SC;
+16/04/2021;abril;4;2021;58;F;sim;não informado;Itajaí;SC;
+16/04/2021;abril;4;2021;64;M;sim;não informado;Itajaí;SC;
+17/04/2021;abril;4;2021;51;M;sim;não informado;Itajaí;SC;
+18/04/2021;abril;4;2021;79;M;sim;não informado;Itajaí;SC;
+18/04/2021;abril;4;2021;75;M;sim;não informado;Itajaí;SC;
+19/04/2021;abril;4;2021;32;F;sim;não informado;Itajaí;SC;
+19/04/2021;abril;4;2021;59;M;sim;não informado;Itajaí;SC;
+19/04/2021;abril;4;2021;84;M;sim;não informado;Itajaí;SC;
+19/04/2021;abril;4;2021;66;F;sim;não informado;Itajaí;SC;
+20/04/2021;abril;4;2021;80;F;sim;não informado;Itajaí;SC;
+21/04/2021;abril;4;2021;88;F;sim;não informado;Itajaí;SC;
+22/04/2021;abril;4;2021;37;M;sim;não informado;Itajaí;SC;
+23/04/2021;abril;4;2021;64;F;sim;não informado;Itajaí;SC;
+23/04/2021;abril;4;2021;67;F;sim;não informado;Itajaí;SC;
+23/04/2021;abril;4;2021;68;F;sim;não informado;Itajaí;SC;
+23/04/2021;abril;4;2021;62;F;não;não informado;Itajaí;SC;
+25/04/2021;abril;4;2021;53;F;sim;não informado;Itajaí;SC;
+25/04/2021;abril;4;2021;55;F;sim;não informado;Itajaí;SC;
+25/04/2021;abril;4;2021;60;F;sim;não informado;Itajaí;SC;
+26/04/2021;abril;4;2021;70;F;sim;não informado;Itajaí;SC;
+26/04/2021;abril;4;2021;74;M;sim;não informado;Itajaí;SC;
+27/04/2021;abril;4;2021;53;M;sim;não informado;Itajaí;SC;
+27/04/2021;abril;4;2021;76;M;sim;não informado;Itajaí;SC;
+27/04/2021;abril;4;2021;40;M;sim;não informado;Itajaí;SC;
+27/04/2021;abril;4;2021;42;M;sim;não informado;Itajaí;SC;
+27/04/2021;abril;4;2021;70;M;sim;não informado;Itajaí;SC;
+27/04/2021;abril;4;2021;42;M;não;não informado;Itajaí;SC;
+28/04/2021;abril;4;2021;65;M;não;não informado;Itajaí;SC;
+28/04/2021;abril;4;2021;57;M;não;não informado;Itajaí;SC;
+01/05/2021;maio;5;2021;64;M;sim;não informado;Itajaí;SC;
+02/05/2021;maio;5;2021;35;F;sim;não informado;Itajaí;SC;
+02/05/2021;maio;5;2021;67;F;sim;não informado;Itajaí;SC;
+03/05/2021;maio;5;2021;80;M;sim;não informado;Itajaí;SC;
+03/05/2021;maio;5;2021;67;M;sim;não informado;Itajaí;SC;
+03/05/2021;maio;5;2021;51;M;sim;não informado;Itajaí;SC;
+03/05/2021;maio;5;2021;50;M;sim;não informado;Itajaí;SC;
+03/05/2021;maio;5;2021;57;M;sim;não informado;Itajaí;SC;
+03/05/2021;maio;5;2021;67;F;sim;não informado;Itajaí;SC;
+04/05/2021;maio;5;2021;69;F;sim;não informado;Itajaí;SC;
+04/05/2021;maio;5;2021;68;M;sim;não informado;Itajaí;SC;
+05/05/2021;maio;5;2021;86;M;sim;não informado;Itajaí;SC;
+05/05/2021;maio;5;2021;62;M;sim;não informado;Itajaí;SC;
+06/05/2021;maio;5;2021;40;M;sim;não informado;Itajaí;SC;
+07/05/2021;maio;5;2021;59;M;sim;não informado;Itajaí;SC;
+08/05/2021;maio;5;2021;47;M;sim;não informado;Itajaí;SC;
+09/05/2021;maio;5;2021;43;F;sim;não informado;Itajaí;SC;
+11/05/2021;maio;5;2021;89;F;não;não informado;Itajaí;SC;
