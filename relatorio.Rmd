@@ -1,0 +1,656 @@
+---
+title: "Relatório Covid Itajaí"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    social: menu
+    source_code: embed
+#runtime: shiny
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, include=FALSE}
+#flexdashboard para usar no markdown
+library(flexdashboard)
+#leitura e transformação dos dados
+library(readr)
+library(plyr)
+library(dplyr)
+library(chron)
+library(xts)
+library(lubridate)
+library(reshape2)
+#gráficos
+library(ggplot2)
+library(plotly)
+library(dygraphs)
+library(leaflet)
+#extras para os gráficos
+library(latticeExtra)
+library(viridis)
+library(ggridges)
+library(ggExtra)
+library(ggpol)
+#library(fmsb)
+#gráfico de árvore
+library(treemap)
+library(d3treeR)
+library(highcharter)
+#tabelas
+library(DT)
+```
+
+```{r, include=FALSE}
+#dados gerais sobre covid em Itajaí
+dadosCorona <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/covid_Itajai.csv",  locale = locale(encoding = 'LATIN1'))
+
+#dados referentes aos óbitos
+dadosObitos <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/obitos_covid.csv",  locale = locale(encoding = 'LATIN1'))
+dadosObitos <- dadosObitos[, -11]
+
+#dados referentes ao Hospital Marieta
+dadosMarieta <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/marieta.csv",  locale = locale(encoding = 'LATIN1'))
+
+#dados referentes as vacinas
+dadosVacina <- read_csv2("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/vacinas.csv")
+
+#dados criação do mapa
+dadosMapa <- read.csv("https://raw.githubusercontent.com/ingoramos/dashboardItj/master/covid_bairros.csv", encoding = "UTF-8")
+```
+
+
+```{r, include=FALSE}
+#Tratamento das Variáveis de data e hora
+dadosCorona$data <- as.Date(dadosCorona$data, format='%d/%m/%Y')
+dadosCorona$report_time <- format(as.POSIXct(dadosCorona$report_time,format="%Y:%m:%d %H:%M:%S"),"%H:%M:%S")
+
+dadosCorona['date_time'] <- as.POSIXct(paste(dadosCorona$data, dadosCorona$report_time), format="%Y-%m-%d %H:%M:%S")
+
+#Criando uma variável chamada semana_ano
+dadosCorona$semana_ano <- NA
+
+for (i in 1:nrow(dadosCorona)){
+    dadosCorona$semana_ano[i] <- lubridate::week(ymd(dadosCorona$data[i]))
+}
+
+```
+
+```{r, include=FALSE}
+#Criando uma variável de tipo character para facilitar a criação de gráficos e ordenar os mesmos (variável: mes)
+for(i in 1:nrow(dadosCorona)){
+  if(nchar(dadosCorona$num_mes[i]) == 1){dadosCorona$num_mes[i] <- paste0(0, dadosCorona$num_mes[i])}
+}
+
+
+for (i in 1:nrow(dadosCorona)){
+  dadosCorona$mes_ano_char[i] <- paste0(dadosCorona$num_mes[i], " - ", dadosCorona$mes[i])
+}
+```
+
+```{r, include=FALSE}
+#Criando uma variável de tipo character para facilitar a criação de gráficos e ordenar os mesmos (variável: semana_ano)
+for(i in 1:nrow(dadosCorona)){
+  if(nchar(dadosCorona$semana_ano[i]) == 1){dadosCorona$semana_ano[i] <- paste0(0, dadosCorona$semana_ano[i])}
+}
+
+
+for (i in 1:nrow(dadosCorona)){
+  dadosCorona$semana_ano_char[i] <- paste0("Semana - ", dadosCorona$semana_ano[i])
+}
+```
+
+```{r, include=FALSE}
+#Tratamento das variáveis da base de dados Óbitos
+dadosObitos$num <- 1
+#Transformando a variável genero
+for(i in 1:nrow(dadosObitos)){
+    if(dadosObitos$genero[i] == "F"){dadosObitos$genero[i] <- "Feminino"}
+    else {dadosObitos$genero[i] <- "Masculino"}
+}
+#criando a variável do tupo character para a semana_ano
+dadosObitos$semana_ano <- NA
+#tratamento da variável tipo data
+dadosObitos$data <- as.Date(dadosObitos$data, format='%d/%m/%Y')
+
+for (i in 1:nrow(dadosObitos)){
+    dadosObitos$semana_ano[i] <- lubridate::week(ymd(dadosObitos$data[i]))
+    
+}
+#variável do tipo char sendo criada semana_ano_char
+for(i in 1:nrow(dadosObitos)){
+  if(nchar(dadosObitos$semana_ano[i]) == 1){dadosObitos$semana_ano[i] <- paste0(0, dadosObitos$semana_ano[i])}
+}
+
+
+for (i in 1:nrow(dadosObitos)){
+  dadosObitos$semana_ano_char[i] <- paste0("Semana - ", dadosObitos$semana_ano[i])
+}
+
+#dadosObitos$semana_ano <- as.numeric(dadosObitos$semana_ano)
+#Categorizando a faixa etária
+dadosObitos$faixa_etaria <- NA
+
+for(i in 1:nrow(dadosObitos)){
+    if(dadosObitos$idade[i] >= 0 & dadosObitos$idade[i] <= 2){dadosObitos$faixa_etaria[i] <- "Até 2 anos"}
+    else if(dadosObitos$idade[i] > 2 & dadosObitos$idade[i] <= 5){dadosObitos$faixa_etaria[i] <- "Entre 2 e 5"}
+    else if(dadosObitos$idade[i] > 5 & dadosObitos$idade[i] <= 10){dadosObitos$faixa_etaria[i] <- "Entre 6 e 10"}
+    else if(dadosObitos$idade[i] > 10 & dadosObitos$idade[i] <= 15){dadosObitos$faixa_etaria[i] <- "Entre 11 e 15"}
+    else if(dadosObitos$idade[i] > 15 & dadosObitos$idade[i] <= 25){dadosObitos$faixa_etaria[i] <- "Entre 16 e 25"}
+    else if(dadosObitos$idade[i] > 25 & dadosObitos$idade[i] <= 35){dadosObitos$faixa_etaria[i] <- "Entre 26 e 35"}
+    else if(dadosObitos$idade[i] > 35 & dadosObitos$idade[i] <= 45){dadosObitos$faixa_etaria[i] <- "Entre 36 e 45"}
+    else if(dadosObitos$idade[i] > 45 & dadosObitos$idade[i] <= 55){dadosObitos$faixa_etaria[i] <- "Entre 46 e 55"}
+    else if(dadosObitos$idade[i] > 55 & dadosObitos$idade[i] <= 60){dadosObitos$faixa_etaria[i] <- "Entre 56 e 60"}
+    else if(dadosObitos$idade[i] > 60 & dadosObitos$idade[i] <= 65){dadosObitos$faixa_etaria[i] <- "Entre 61 e 65"}
+    else if(dadosObitos$idade[i] > 65 & dadosObitos$idade[i] <= 70){dadosObitos$faixa_etaria[i] <- "Entre 66 e 70"}
+    else if(dadosObitos$idade[i] > 70 & dadosObitos$idade[i] <= 75){dadosObitos$faixa_etaria[i] <- "Entre 71 e 75"}
+    else if(dadosObitos$idade[i] > 75 & dadosObitos$idade[i] <= 80){dadosObitos$faixa_etaria[i] <- "Entre 76 e 80"}
+    else if(dadosObitos$idade[i] > 80 & dadosObitos$idade[i] <= 85){dadosObitos$faixa_etaria[i] <- "Entre 81 e 85"}
+    else if(dadosObitos$idade[i] > 85 & dadosObitos$idade[i] <= 90){dadosObitos$faixa_etaria[i] <- "Entre 86 e 90"}
+    else if(dadosObitos$idade[i] > 90 & dadosObitos$idade[i] <= 95){dadosObitos$faixa_etaria[i] <- "Entre 91 e 95"}
+    else if(dadosObitos$idade[i] > 95 & dadosObitos$idade[i] <= 100){dadosObitos$faixa_etaria[i] <- "Entre 96 e 100"}
+    else if(dadosObitos$idade[i] > 100 & dadosObitos$idade[i] <= 105){dadosObitos$faixa_etaria[i] <- "Entre 101 e 105"}
+    else {dadosObitos$faixa_etaria[i] <- "Mais de 106 anos"}
+}
+
+```
+
+
+# Gráficos Gerais
+
+Row
+-----------------------------------------------------------------------
+
+### Gráfico de Linha Temporal
+```{r, echo=FALSE}
+#criação de um objeto usado para o gráfico de linha temporal
+linePlotData <- dadosCorona
+linePlotData$date_time <- ymd_hms(linePlotData$date_time)
+don <- xts(x = linePlotData$casos_ativos, order.by = linePlotData$date_time)
+
+#gráfico de linha temporal
+slp <- dygraph(don, main = "Casos Ativos por Boletim Epidemiológico") %>%
+    dyOptions(labelsUTC = FALSE, fillGraph=TRUE, fillAlpha=0.1, drawGrid = FALSE, colors="#D8AE5A") %>%
+    dyRangeSelector() %>%
+    dyCrosshair(direction = "vertical") %>%
+    dyHighlight(highlightCircleSize = 8, highlightSeriesBackgroundAlpha = 0.2, hideOnMouseOut = FALSE)  %>%
+    dyRoller(rollPeriod = 1)
+
+slp
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Gráfico Diferença
+```{r, echo=FALSE}
+loliData <- dadosCorona
+loliData <- loliData %>% 
+      mutate(mycolor = ifelse(dif_casos_ativos>0, "type1", "type2"))
+        
+        
+lp <- ggplot(loliData, aes(x=data, y=dif_casos_ativos)) +
+    geom_segment( aes(x=data, xend=data, y=0, yend=dif_casos_ativos, color=mycolor), size=1.3, alpha=0.9) +
+    theme_light() +
+    theme(
+        legend.position = "none",
+        panel.border = element_blank(),
+    ) +
+    ggtitle("Diferença de Casos Ativos por Boletim Epidemiológico") +
+    xlab("Mês") +
+    ylab("Diferença")
+
+
+ggplotly(lp)
+```
+
+
+### Gráfico de Linhas
+```{r, echo=FALSE}
+#xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
+multiLinePlot <- data.frame(
+  data=dadosCorona$data,
+  casos_confirmados = dadosCorona$casos_confirmados_total,
+  casos_curados = dadosCorona$casos_curados_total
+)
+
+donmlp <- xts(x = multiLinePlot[,-1], order.by = multiLinePlot$data)
+
+mlp <- dygraph(donmlp, main = "Casos Acumulados (Confirmados e Curados)", ylab = "Número de Casos Acumulados", xlab = "Data") %>%
+  dySeries("casos_confirmados", label = "Casos Confirmados", color = "red") %>%
+  dySeries("casos_curados", label = "Casos Curados", color = "green", fillGraph = TRUE) %>%
+  dyLegend(show = "always", width = 600, hideOnMouseOut = TRUE) %>%
+  dyOptions(drawGrid = FALSE)%>%
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+
+mlp
+```
+
+Row
+-----------------------------------------------------------------------
+### Gráfico de Linha 
+```{r, echo=FALSE}
+lineData <- dadosCorona
+lp1 <- ggplot(lineData, aes(x=data, y=casos_descartados_total)) +
+  geom_area(fill="#ffff09", alpha=0.4) +
+  geom_line(color="#ffff09", size=2) +
+  geom_point(size=3, color="#ffff09") +
+  ggtitle("Casos Descartados Acumulados") +
+  theme_minimal()
+    
+ggplotly(lp1)
+```
+
+### Gráfico de Linha 
+```{r, echo=FALSE}
+lp2 <- ggplot(lineData, aes(x=data, y=mortes_total)) +
+  geom_area(fill="#000000", alpha=0.4) +
+  geom_line(color="#000000", size=2) +
+  geom_point(size=3, color="#000000") +
+  ggtitle("Óbitos Acumulados") +
+  theme_minimal()
+      
+ggplotly(lp2)
+```
+
+
+# Gráficos Óbitos
+```{r, include=FALSE}
+bpData20 <- dadosObitos %>%
+  filter(ano == "2020") %>%
+  group_by(semana_ano_char, genero) %>%
+  summarise(num = sum(num))
+
+bpData21 <- dadosObitos %>%
+    filter(ano == "2021") %>%
+    group_by(semana_ano_char, genero) %>%
+    summarise(num = sum(num))
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Gráfico Barra
+```{r, echo=FALSE}
+bpo20 <- ggplot(data = bpData20, aes_string(x="semana_ano_char", y="num", fill="genero"))+
+  geom_bar(stat = "identity", position = position_dodge())+
+  scale_fill_brewer(palette="Set2")+
+  theme_minimal() +
+  ylab("Número de Óbitos") +
+  ggtitle("Óbitos por Semana do Ano de 2020 por Gênero") +
+  theme(
+      plot.title = element_text(size=11,),
+      axis.text.x = element_text(angle = 45, vjust = 1,
+                                 size = 12, hjust = 1, family = "serif"))
+ggplotly(bpo20)
+```
+
+### Gráfico Barra
+```{r, echo=FALSE}
+bpo21 <- ggplot(data = bpData21, aes_string(x="semana_ano_char", y="num", fill="genero"))+
+  geom_bar(stat = "identity", position = position_dodge())+
+  scale_fill_brewer(palette="Set2")+
+  theme_minimal() +
+  ylab("Número de Óbitos") +
+  ggtitle("Óbitos por Semana do Ano de 2021 por Gênero") +
+  theme(
+      plot.title = element_text(size=11,),
+      axis.text.x = element_text(angle = 45, vjust = 1,
+                                 size = 12, hjust = 1, family = "serif"))
+ggplotly(bpo21)
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Gráfico Pirâmide
+```{r, echo=FALSE}
+pp <- ggplot(data = dadosObitos, aes(x = as.factor(faixa_etaria), fill = genero)) + 
+    geom_bar(data = dplyr::filter(dadosObitos, genero == "Masculino")) + 
+    geom_bar(data = dplyr::filter(dadosObitos, genero == "Feminino"), aes(y = ..count.. * (-1))) + 
+    coord_flip() +
+    scale_fill_brewer(palette = "Set2") +
+    ggtitle("Óbitos por Faixa Etária por Gênero") +
+    theme_bw()
+    
+
+ggplotly(pp)
+```
+
+### Gráfico de Donut
+```{r, echo=FALSE}
+donut <- dadosObitos %>%
+    group_by(genero) %>%
+    summarise(num = sum(num))
+
+#donut
+
+donut$perc <- donut$num / sum(donut$num)
+
+donut$round_perc <- round(donut$perc * 100)
+
+donut$ymax <- cumsum(donut$perc)
+
+# Compute the bottom of each rectangle
+donut$ymin <- c(0, head(donut$ymax, n=-1))
+
+# Compute label position
+donut$labelPosition <- (donut$ymax + donut$ymin) / 2
+
+# Compute a good label
+donut$label <- paste0(donut$genero, "\n valor: ", donut$round_perc, "%")
+
+ggplot(donut, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=genero)) +
+    geom_rect() +
+    geom_text( x=2, aes(y=labelPosition, label=label, color=genero), size=6) + # x here controls label position (inner / outer)
+    scale_fill_brewer(palette="Set2") +
+    scale_color_brewer(palette="Dark2") +
+    coord_polar(theta="y") +
+    xlim(c(-1, 4)) +
+    theme_void() +
+    ggtitle("Óbitos por Gênero Acumulados (2020/2021)") +
+    theme(legend.position = "none")
+```
+
+# Gráficos Vacinas e Hospital Marieta
+Row
+-----------------------------------------------------------------------
+
+```{r, include=FALSE}
+dadosVacina$data <- as.Date(dadosVacina$data, format='%d/%m/%Y')
+```
+
+### Gráfico de Linhas
+```{r, echo=FALSE}
+#xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
+multiLineVacinas <- data.frame(
+  data=dadosVacina$data,
+  primeira_dose = dadosVacina$vacinados,
+  segunda_dose = dadosVacina$segunda_dose
+)
+
+donvacinas <- xts(x=multiLineVacinas[,-1], order.by = multiLineVacinas$data)
+
+mlpv <- dygraph(donvacinas, main = "Primeira e Segunda Dose Vacina", ylab = "Número de Vacinados", xlab = "Data") %>%
+  dySeries("primeira_dose", label = "Primeira Dose", color = "#8200ff") %>%
+  dySeries("segunda_dose", label = "Segunda Dose", color = "#00ff96", fillGraph = TRUE) %>%
+  dyLegend(show = "always", width = 600, hideOnMouseOut = TRUE) %>%
+  dyOptions(drawGrid = FALSE)%>%
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+mlpv
+```
+
+### Gráfico Linha
+```{r, echo=FALSE}
+# Gráfico de linha dos novos vacinados primeira dose por dia
+
+lpvn <- ggplot(dadosVacina, aes(x=data, y=novos_vacinados)) +
+  geom_area(fill="#96ff96", alpha=0.4) +
+  geom_line(color="#96ff96", size=2) +
+  geom_point(size=3, color="#96ff96") +
+  ggtitle("Novos Vacinados") +
+  theme_minimal()
+    
+ggplotly(lpvn)
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Mapa
+```{r, include=FALSE}
+dadosMapa$type <- NA
+        
+for (i in 1:nrow(dadosMapa)){
+    if(dadosMapa$num_casos[i] <= mean(dadosMapa$num_casos)){dadosMapa$type[i] <- 'abaixo'}
+    else {dadosMapa$type[i] <- 'acima'}
+}
+```
+
+```{r, echo=FALSE}
+pal <- colorFactor(c("navy", "red"), domain = c("abaixo", "acima"))
+
+titulo <- "Casos Acumulados Por Bairro"
+
+leaflet(dadosMapa) %>% 
+    setView(lng = -48.751037, lat = -26.975853, zoom = 12) %>%
+    addTiles() %>%
+    addCircleMarkers(~longitude, ~latitude, label=~as.character(paste0(bairro, " - ", num_casos, " casos totais")),
+                     labelOptions = labelOptions(textsize = "15px"),
+                     radius = ~ifelse(type == "acima", 14, 10),
+                     color = ~pal(type),
+                     stroke = FALSE, fillOpacity = 0.5
+    ) %>%
+    addControl(titulo, position = "bottomright")
+```
+
+> Mapa Desatualizado (última atualização em 07/12/2020) 
+
+### Gráfico Loliplot
+```{r, include=FALSE}
+dadosMarieta$data <- as.Date(dadosMarieta$data, format='%d/%m/%Y')
+```
+
+```{r, echo=FALSE}
+lpi <- ggplot(dadosMarieta, aes(x=data, y=internacoes_uti)) +
+  geom_point(size=2, color="#fe3232") +
+  geom_segment(aes(x=data, xend=data, y=0, yend=internacoes_uti), color="#fe3232") +
+  ggtitle("Número de Internados Hospital Marieta por Dia") +
+  theme_minimal()
+  
+ggplotly(lpi)
+
+```
+
+
+# Outros Gráficos
+
+Row 
+-----------------------------------------------------------------------
+
+### Gráfico de Distribuição Ridge
+```{r, echo=FALSE}
+rps20 <- dadosCorona %>%
+    filter(ano == "2020") %>%
+    ggplot(aes_string(x = "casos_ativos", y = "semana_ano_char", fill = "..x..")) +
+    geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
+    scale_fill_viridis(name = "Casos Ativos", option = "C") +
+    labs(title = "Distribuição Ridge por Semana 2020") +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        panel.spacing = unit(0.1, "lines"),
+        strip.text.x = element_text(size = 8)
+    )
+rps20
+```
+
+### Gráfico de Distribuição Ridge
+```{r, echo=FALSE}
+rps21 <- dadosCorona %>%
+    filter(ano == "2021") %>%
+    ggplot(aes_string(x = "casos_ativos", y = "semana_ano_char", fill = "..x..")) +
+    geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
+    scale_fill_viridis(name = "Casos Ativos", option = "C") +
+    labs(title = "Distribuição Ridge por Semana 2021") +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        panel.spacing = unit(0.1, "lines"),
+        strip.text.x = element_text(size = 8)
+    )
+rps21
+```
+
+### Gráfico de Distribuição Ridge
+```{r, echo=FALSE}
+rps20 <- dadosCorona %>%
+    filter(ano == "2020") %>%
+    ggplot(aes_string(x = "casos_ativos", y = "mes_ano_char", fill = "..x..")) +
+    geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
+    scale_fill_viridis(name = "Casos Ativos", option = "C") +
+    labs(title = "Distribuição Ridge por Mês 2020") +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        panel.spacing = unit(0.1, "lines"),
+        strip.text.x = element_text(size = 8)
+    )
+rps20
+```
+
+### Gráfico de Distribuição Ridge
+```{r, echo=FALSE}
+rps21 <- dadosCorona %>%
+    filter(ano == "2021") %>%
+    ggplot(aes_string(x = "casos_ativos", y = "mes_ano_char", fill = "..x..")) +
+    geom_density_ridges_gradient(scale = 3, rel_min_height = 0.01) +
+    scale_fill_viridis(name = "Casos Ativos", option = "C") +
+    labs(title = "Distribuição Ridge por Mês 2021") +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        panel.spacing = unit(0.1, "lines"),
+        strip.text.x = element_text(size = 8)
+    )
+rps21
+```
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+### Boxplot semana 2020 
+```{r, echo=FALSE}
+bps20 <- dadosCorona %>%
+    filter(ano == "2020") %>%
+    ggplot( aes_string(x="semana_ano_char", y="casos_ativos", fill="semana_ano_char")) +
+    geom_boxplot() +
+    scale_color_viridis(discrete = TRUE, alpha=0.6) +
+    geom_jitter(color="black", size=0.4, alpha=0.9) +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        plot.title = element_text(size=11,),
+        axis.text.x = element_text(angle = 45, vjust = 1,
+                                   size = 12, hjust = 1, family = "serif")
+    ) +
+    ggtitle("Boxplot Com Observações por Semana de 2020") +
+    xlab("")
+
+ggplotly(bps20)
+```
+
+### Boxplot semana 2021
+```{r, echo=FALSE}
+bps20 <- dadosCorona %>%
+    filter(ano == "2021") %>%
+    ggplot( aes_string(x="semana_ano_char", y="casos_ativos", fill="semana_ano_char")) +
+    geom_boxplot() +
+    scale_color_viridis(discrete = TRUE, alpha=0.6) +
+    geom_jitter(color="black", size=0.4, alpha=0.9) +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        plot.title = element_text(size=11,),
+        axis.text.x = element_text(angle = 45, vjust = 1,
+                                   size = 12, hjust = 1, family = "serif")
+    ) +
+    ggtitle("Boxplot Com Observações por Semana de 2021") +
+    xlab("")
+
+ggplotly(bps20)
+```
+
+
+### Boxplot mês 2020 
+```{r, echo=FALSE}
+bps20 <- dadosCorona %>%
+    filter(ano == "2020") %>%
+    ggplot( aes_string(x="mes_ano_char", y="casos_ativos", fill="mes_ano_char")) +
+    geom_boxplot() +
+    scale_color_viridis(discrete = TRUE, alpha=0.6) +
+    geom_jitter(color="black", size=0.4, alpha=0.9) +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        plot.title = element_text(size=11,),
+        axis.text.x = element_text(angle = 45, vjust = 1,
+                                   size = 12, hjust = 1, family = "serif")
+    ) +
+    ggtitle("Boxplot Com Observações por Mês de 2020") +
+    xlab("")
+
+ggplotly(bps20)
+```
+
+### Boxplot mês 2021
+```{r, echo=FALSE}
+bps20 <- dadosCorona %>%
+    filter(ano == "2021") %>%
+    ggplot( aes_string(x="mes_ano_char", y="casos_ativos", fill="mes_ano_char")) +
+    geom_boxplot() +
+    scale_color_viridis(discrete = TRUE, alpha=0.6) +
+    geom_jitter(color="black", size=0.4, alpha=0.9) +
+    theme_minimal() +
+    theme(
+        legend.position="none",
+        plot.title = element_text(size=11,),
+        axis.text.x = element_text(angle = 45, vjust = 1,
+                                   size = 12, hjust = 1, family = "serif")
+    ) +
+    ggtitle("Boxplot Com Observações por Mês de 2021") +
+    xlab("")
+
+ggplotly(bps20)
+```
+
+
+# Tabelas Utilizadas
+
+Row
+-----------------------------------------------------------------------
+### Dados Gerais
+```{r, echo=FALSE}
+datatable(dadosCorona, options = list(pageLength = 50))
+```
+
+### Dados Óbitos
+```{r, echo=FALSE}
+datatable(dadosObitos, options = list(pageLength = 50))
+```
+
+Row 
+-----------------------------------------------------------------------
+### Dados Marieta
+```{r, echo=FALSE}
+datatable(dadosMarieta, options = list(pageLength = 50))
+```
+
+### Dados Mapa
+```{r, echo=FALSE}
+datatable(dadosMapa, options = list(pageLength = 50))
+```
+
+# Sobre Ingo Ramos
+
+Sou formado pela Universidade Federal de Santa Catarina - UFSC, porém nativo de Itajaí, e desde o começo da pandemia de Coronavírus, venho acompanhando a situação do Município.
+
+`O propósito deste trabalho é apenas facilitar a visualização dos dados que são disponibilizados pela prefeitura.`
+ - Não tire conclusões precipitadas sobre a situação da pandemia, continue praticando o isolamento (se possível), além de seguir os protocolos de segurança.
+
+ - Vou deixar aqui meus contatos caso você queira tirar alguma dúvida ou até mesmo sugerir algo:
+ - Clique para acessar o LinkedIn: https://www.linkedin.com/in/ingo-ramos/ ;
+ - Ou mandar um e-mail para: `ingoramos12@gmail.com` que responderei assim que possível;
+ - E para você que quer replicar o trabalho, os dados/código usados para o desenvolvimento estão no github:
+https://github.com/ingoramos/dashboardItj. Vou atualizando todos os dias, quando novos dados estiverem disponíveis.
+
+`Referências:`
+ - Dados retirados do boletim do município: http://coronavirus.itajai.sc.gov.br/;
+
+
+
+
