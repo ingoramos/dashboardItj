@@ -479,15 +479,15 @@ server <- function(input, output) {
     #gráfico de linha simples
     output$multiLine <- renderDygraph({
         
-        teste <- coronaData()
+        lineDataDyg <- coronaData()
         
-        teste <- data.frame(
-            data=dadosCorona$data,
-            casos_confirmados = dadosCorona$casos_confirmados_total,
-            casos_curados = dadosCorona$casos_curados_total
+        lineDataDyg <- data.frame(
+            data=lineDataDyg$data,
+            casos_confirmados = lineDataDyg$casos_confirmados_total,
+            casos_curados = lineDataDyg$casos_curados_total
         )
         
-        donmlp <- xts(x = teste[,-1], order.by = teste$data)
+        donmlp <- xts(x = lineDataDyg[,-1], order.by = lineDataDyg$data)
         
         mlp <- dygraph(donmlp, main = "Casos Acumulados (Confirmados e Curados)", ylab = "Número de Casos Acumulados", xlab = "Data") %>%
             dySeries("casos_confirmados", label = "Casos Confirmados", color = "red") %>%
