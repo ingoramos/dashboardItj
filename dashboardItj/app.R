@@ -16,7 +16,7 @@ library(chron)
 library(xts)
 library(lubridate)
 library(reshape2)
-#criação do dashbard
+#criação do dashboard
 library(shiny)
 library(shinydashboard)
 #e gráficos
@@ -85,12 +85,12 @@ ui <- dashboardPage(
                         #gráfico com a a diferença de casos por boletim, ou seja, se o número aumenta ou diminui
                         box(plotlyOutput("loliplot", height = 400)),
                         #gráfico com as variáveis casos confirmados, casos curados e óbitos no mesmo plano (péssimo para essa visualização)
-                        box(plotlyOutput("multiLine", height = 400))
+                        box(dygraphOutput("multiLine", height = 400))
                     ),
                     
                     fluidRow(
                         #seleção de variávies para os próximos dois gráficos
-                        box(width = 4, selectInput("vars", label = "Selecione", choices = list("Mês" = "mes", "Semana" = "semana_ano"), selected = 1)),
+                        box(width = 4, selectInput("vars", label = "Selecione", choices = list("Mês" = "mes_ano_char", "Semana" = "semana_ano_char"), selected = 1)),
                         
                         box(width = 4, selectInput("page1year", label = "Selecione o Ano", choices = list("2020" = "2020", "2021" = "2021"), selected = 1)),
                         
@@ -119,7 +119,7 @@ ui <- dashboardPage(
                     ),
                     fluidRow(
                         #caixas para seleção de variáveis
-                        box(width = 6, selectInput("varsObito", label = "Selecione", choices = list("Mês" = "mes", "Semana" = "semana_ano"), selected = 1)),
+                        box(width = 6, selectInput("varsObito", label = "Selecione", choices = list("Mês" = "mes_ano_char", "Semana" = "semana_ano_char"), selected = 1)),
                         box(width = 6, selectInput("page2year", label = "Selecione o Ano", choices = list("2020" = "2020", "2021" = "2021"), selected = 1))
                     ),
                     fluidRow(
@@ -184,7 +184,7 @@ ui <- dashboardPage(
             tabItem(tabName = "contato",
                     h2(tags$b("Ingo Ramos")),
                     
-                    h4("Sou aluno da Universidade Federal de Santa Catarina - UFSC, porém nativo de Itajaí, e desde o começo da pandemia, venho
+                    h4("Sou formado pela Universidade Federal de Santa Catarina - UFSC, porém nativo de Itajaí, e desde o começo da pandemia, venho
                        acompanhando a situação do Município.", tags$br("O propósito deste trabalho é apenas facilitar a visualização dos dados que são 
                        disponibilizados pela prefeitura. ", tags$b("Não tire conclusões precipitadas sobre a situação da pandemia, continue praticando
                        o isolamento (se possível), além de seguir os protocolos de segurança.")), tags$br(),
@@ -226,8 +226,28 @@ server <- function(input, output) {
         
         corona$semana_ano <- NA
         
+        
         for (i in 1:nrow(corona)){
-            corona$semana_ano[i] <- paste0("Semana ", lubridate::week(ymd(corona$data[i])))
+            corona$semana_ano[i] <- lubridate::week(ymd(corona$data[i]))
+        }
+        
+        #Criando uma variável de tipo character para facilitar a criação de gráficos e ordenar os mesmos (variável: mes)
+        for(i in 1:nrow(corona)){
+            if(nchar(corona$num_mes[i]) == 1){corona$num_mes[i] <- paste0(0, corona$num_mes[i])}
+        }
+        
+        for (i in 1:nrow(corona)){
+            corona$mes_ano_char[i] <- paste0(corona$num_mes[i], " - ", corona$mes[i])
+        }
+        
+        #Criando uma variável de tipo character para facilitar a criação de gráficos e ordenar os mesmos (variável: semana_ano)
+        for(i in 1:nrow(corona)){
+            if(nchar(corona$semana_ano[i]) == 1){corona$semana_ano[i] <- paste0(0, corona$semana_ano[i])}
+        }
+        
+        
+        for (i in 1:nrow(corona)){
+            corona$semana_ano_char[i] <- paste0("Semana - ", corona$semana_ano[i])
         }
 
         return(corona)
@@ -365,7 +385,7 @@ server <- function(input, output) {
         
         pal <- colorFactor(c("navy", "red"), domain = c("abaixo", "acima"))
         
-        titulo <- tags$h4(
+        titulo <- tags$h3(
             HTML("Casos Acumulados por Bairro")
         )
         
@@ -457,20 +477,25 @@ server <- function(input, output) {
     })
     
     #gráfico de linha simples
-    output$multiLine <- renderPlotly({
+    output$multiLine <- renderDygraph({
         
-        #xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
-        corona <- coronaData()
+        teste <- coronaData()
         
-        mlp <- ggplot(corona, aes(x=data)) +
-            geom_line(aes(y=casos_confirmados_total, color = "Confirmados")) +
-            geom_line(aes(y=casos_curados_total, color = "Curados")) +
-            geom_line(aes(y=mortes_total, color = "Óbitos")) +
-            ggtitle("Casos Confirmados, Casos Curados, Óbitos (Acumulados)") +
-            theme(axis.title.y=element_blank(),
-                  legend.position = "bottom")
+        teste <- data.frame(
+            data=dadosCorona$data,
+            casos_confirmados = dadosCorona$casos_confirmados_total,
+            casos_curados = dadosCorona$casos_curados_total
+        )
         
-        mlp <- ggplotly(mlp)
+        donmlp <- xts(x = teste[,-1], order.by = teste$data)
+        
+        mlp <- dygraph(donmlp, main = "Casos Acumulados (Confirmados e Curados)", ylab = "Número de Casos Acumulados", xlab = "Data") %>%
+            dySeries("casos_confirmados", label = "Casos Confirmados", color = "red") %>%
+            dySeries("casos_curados", label = "Casos Curados", color = "green", fillGraph = TRUE) %>%
+            dyLegend(show = "always", width = 600, hideOnMouseOut = TRUE) %>%
+            dyOptions(drawGrid = FALSE)%>%
+            dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+        
         mlp
     })
     
@@ -499,7 +524,7 @@ server <- function(input, output) {
         internados <- round(internados, digits = 2)
         
         valueBox(
-            paste0(internados, "%"), "(Ocupação dos Leitos no Hospital Marieta)", icon = icon("hospital-user", lib = "font-awesome"),
+            paste0(internados, "% de Ocupação"), "(dos Leitos no Hospital Marieta)", icon = icon("hospital-user", lib = "font-awesome"),
             color = 'maroon'
         )    
     })
@@ -524,9 +549,10 @@ server <- function(input, output) {
         vacinas <- vacinasData()
         
         num_vacinados <- tail(vacinas$vacinados, 1)
+        segunda_dose <- tail(vacinas$segunda_dose, 1)
         
         valueBox(
-            paste0(num_vacinados, " vacinados"), "no total", icon = icon("syringe", lib = "font-awesome")
+            paste0(num_vacinados, " vacinados"), paste0("Mais ", segunda_dose, " vacinados com a segunda dose"), icon = icon("syringe", lib = "font-awesome")
         )
         
     })
@@ -549,9 +575,29 @@ server <- function(input, output) {
         obitos$data <- as.Date(obitos$data, format='%d/%m/%Y')
         
         for (i in 1:nrow(obitos)){
-            obitos$semana_ano[i] <- paste0("Semana ", lubridate::week(ymd(obitos$data[i])))
+            obitos$semana_ano[i] <- lubridate::week(ymd(obitos$data[i]))
         }
         
+        #Criando uma variável de tipo character para facilitar a criação de gráficos e ordenar os mesmos (variável: mes)
+        for(i in 1:nrow(obitos)){
+            if(nchar(obitos$num_mes[i]) == 1){obitos$num_mes[i] <- paste0(0, obitos$num_mes[i])}
+        }
+        
+        for (i in 1:nrow(obitos)){
+            obitos$mes_ano_char[i] <- paste0(obitos$num_mes[i], " - ", obitos$mes[i])
+        }
+        
+        #variável do tipo char sendo criada semana_ano_char
+        for(i in 1:nrow(obitos)){
+            if(nchar(obitos$semana_ano[i]) == 1){obitos$semana_ano[i] <- paste0(0, obitos$semana_ano[i])}
+        }
+        
+        
+        for (i in 1:nrow(obitos)){
+            obitos$semana_ano_char[i] <- paste0("Semana - ", obitos$semana_ano[i])
+        }
+        
+        #dados da faixa etária
         obitos$faixa_etaria <- NA
         
         for(i in 1:nrow(obitos)){
@@ -592,11 +638,11 @@ server <- function(input, output) {
     #gráfico de barra comparando o número de óbitos
     output$plot4 <- renderPlotly({
         
-        if(dataObito() == "mes"){
+        if(dataObito() == "mes_ano_char"){
             
             bpData <- obitosData() %>%
                 filter(ano == input$page2year) %>%
-                group_by(mes, genero) %>%
+                group_by(mes_ano_char, genero) %>%
                 summarise(num = sum(num))
             
             bpData
@@ -619,7 +665,7 @@ server <- function(input, output) {
         else{
             bpData <- obitosData() %>%
                 filter(ano == input$page2year) %>%
-                group_by(semana_ano, genero) %>%
+                group_by(semana_ano_char, genero) %>%
                 summarise(num = sum(num))
             
             bpData
