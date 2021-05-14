@@ -538,7 +538,7 @@ bps20 <- dadosCorona %>%
         axis.text.x = element_text(angle = 45, vjust = 1,
                                    size = 12, hjust = 1, family = "serif")
     ) +
-    ggtitle("Boxplot Com Observações por Semana de 2020") +
+    ggtitle("Boxplot Com Observações de Casos Ativos por Semana de 2020") +
     xlab("")
 
 ggplotly(bps20)
@@ -559,7 +559,7 @@ bps20 <- dadosCorona %>%
         axis.text.x = element_text(angle = 45, vjust = 1,
                                    size = 12, hjust = 1, family = "serif")
     ) +
-    ggtitle("Boxplot Com Observações por Semana de 2021") +
+    ggtitle("Boxplot Com Observações de Casos Ativos por Semana de 2021") +
     xlab("")
 
 ggplotly(bps20)
@@ -581,7 +581,7 @@ bps20 <- dadosCorona %>%
         axis.text.x = element_text(angle = 45, vjust = 1,
                                    size = 12, hjust = 1, family = "serif")
     ) +
-    ggtitle("Boxplot Com Observações por Mês de 2020") +
+    ggtitle("Boxplot Com Observações de Casos Ativos por Mês de 2020") +
     xlab("")
 
 ggplotly(bps20)
@@ -602,7 +602,7 @@ bps20 <- dadosCorona %>%
         axis.text.x = element_text(angle = 45, vjust = 1,
                                    size = 12, hjust = 1, family = "serif")
     ) +
-    ggtitle("Boxplot Com Observações por Mês de 2021") +
+    ggtitle("Boxplot Com Observações de Casos Ativos por Mês de 2021") +
     xlab("")
 
 ggplotly(bps20)
