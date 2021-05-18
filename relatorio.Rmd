@@ -3,10 +3,17 @@ title: "Relatório Covid Itajaí"
 output:
   flexdashboard::flex_dashboard:
     orientation: rows
+    vertical_layout: fill
     social: menu
     source_code: embed
 #runtime: shiny
 ---
+
+<style>
+
+body { padding-top: 70px; }
+
+</style>
 
 
 ```{r setup, include=FALSE}
@@ -15,6 +22,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r, include=FALSE}
+#para o runtime: shiny
+#library(shiny)
 #flexdashboard para usar no markdown
 library(flexdashboard)
 #leitura e transformação dos dados
@@ -160,13 +169,13 @@ for(i in 1:nrow(dadosObitos)){
 ```
 
 
-# Gráficos Gerais
+# Casos Ativos, Curados e Confirmados {data-navmenu="Gráficos"}
 
 Row
 -----------------------------------------------------------------------
 
 ### Gráfico de Linha Temporal
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 #criação de um objeto usado para o gráfico de linha temporal
 linePlotData <- dadosCorona
 linePlotData$date_time <- ymd_hms(linePlotData$date_time)
@@ -186,8 +195,34 @@ slp
 Row
 -----------------------------------------------------------------------
 
+### Gráfico Linhas
+```{r, echo=FALSE, out.width='100%'}
+#xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
+multiLinePlot <- data.frame(
+  data=dadosCorona$data,
+  casos_confirmados = dadosCorona$casos_confirmados_total,
+  casos_curados = dadosCorona$casos_curados_total
+)
+
+donmlp <- xts(x = multiLinePlot[,-1], order.by = multiLinePlot$data)
+
+mlp <- dygraph(donmlp, main = "Casos Acumulados (Confirmados e Curados)", ylab = "Número de Casos Acumulados", xlab = "Data") %>%
+  dySeries("casos_confirmados", label = "Casos Confirmados", color = "red") %>%
+  dySeries("casos_curados", label = "Casos Curados", color = "green", fillGraph = TRUE) %>%
+  dyLegend(show = "always", width = 600, hideOnMouseOut = TRUE) %>%
+  dyOptions(drawGrid = FALSE)%>%
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+
+mlp
+```
+
+
+# Gráfico Casos Ativos, Descartados e Óbitos {data-navmenu="Gráficos"}
+
+Row
+-----------------------------------------------------------------------
 ### Gráfico Diferença
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 loliData <- dadosCorona
 loliData <- loliData %>% 
       mutate(mycolor = ifelse(dif_casos_ativos>0, "type1", "type2"))
@@ -208,32 +243,10 @@ lp <- ggplot(loliData, aes(x=data, y=dif_casos_ativos)) +
 ggplotly(lp)
 ```
 
-
-### Gráfico de Linhas
-```{r, echo=FALSE}
-#xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
-multiLinePlot <- data.frame(
-  data=dadosCorona$data,
-  casos_confirmados = dadosCorona$casos_confirmados_total,
-  casos_curados = dadosCorona$casos_curados_total
-)
-
-donmlp <- xts(x = multiLinePlot[,-1], order.by = multiLinePlot$data)
-
-mlp <- dygraph(donmlp, main = "Casos Acumulados (Confirmados e Curados)", ylab = "Número de Casos Acumulados", xlab = "Data") %>%
-  dySeries("casos_confirmados", label = "Casos Confirmados", color = "red") %>%
-  dySeries("casos_curados", label = "Casos Curados", color = "green", fillGraph = TRUE) %>%
-  dyLegend(show = "always", width = 600, hideOnMouseOut = TRUE) %>%
-  dyOptions(drawGrid = FALSE)%>%
-  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
-
-mlp
-```
-
 Row
 -----------------------------------------------------------------------
 ### Gráfico de Linha 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 lineData <- dadosCorona
 lp1 <- ggplot(lineData, aes(x=data, y=casos_descartados_total)) +
   geom_area(fill="#ffff09", alpha=0.4) +
@@ -246,7 +259,7 @@ ggplotly(lp1)
 ```
 
 ### Gráfico de Linha 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 lp2 <- ggplot(lineData, aes(x=data, y=mortes_total)) +
   geom_area(fill="#000000", alpha=0.4) +
   geom_line(color="#000000", size=2) +
@@ -258,8 +271,9 @@ ggplotly(lp2)
 ```
 
 
-# Gráficos Óbitos
-```{r, include=FALSE}
+# Gráficos Óbitos {data-navmenu="Gráficos"}
+
+```{r, include=FALSE, out.width='100%'}
 bpData20 <- dadosObitos %>%
   filter(ano == "2020") %>%
   group_by(semana_ano_char, genero) %>%
@@ -275,7 +289,7 @@ Row
 -----------------------------------------------------------------------
 
 ### Gráfico Barra
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 bpo20 <- ggplot(data = bpData20, aes_string(x="semana_ano_char", y="num", fill="genero"))+
   geom_bar(stat = "identity", position = position_dodge())+
   scale_fill_brewer(palette="Set2")+
@@ -290,7 +304,7 @@ ggplotly(bpo20)
 ```
 
 ### Gráfico Barra
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 bpo21 <- ggplot(data = bpData21, aes_string(x="semana_ano_char", y="num", fill="genero"))+
   geom_bar(stat = "identity", position = position_dodge())+
   scale_fill_brewer(palette="Set2")+
@@ -308,7 +322,7 @@ Row
 -----------------------------------------------------------------------
 
 ### Gráfico Pirâmide
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 pp <- ggplot(data = dadosObitos, aes(x = as.factor(faixa_etaria), fill = genero)) + 
     geom_bar(data = dplyr::filter(dadosObitos, genero == "Masculino")) + 
     geom_bar(data = dplyr::filter(dadosObitos, genero == "Feminino"), aes(y = ..count.. * (-1))) + 
@@ -322,7 +336,7 @@ ggplotly(pp)
 ```
 
 ### Gráfico de Donut
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 donut <- dadosObitos %>%
     group_by(genero) %>%
     summarise(num = sum(num))
@@ -356,7 +370,7 @@ ggplot(donut, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=genero)) +
     theme(legend.position = "none")
 ```
 
-# Gráficos Vacinas e Hospital Marieta
+# Gráficos Vacinas e Hospital Marieta {data-navmenu="Gráficos"}
 Row
 -----------------------------------------------------------------------
 
@@ -365,7 +379,7 @@ dadosVacina$data <- as.Date(dadosVacina$data, format='%d/%m/%Y')
 ```
 
 ### Gráfico de Linhas
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 #xyplot(casos_confirmados_total + casos_curados_total + mortes_total ~ data, corona, type = "l", lwd=2)
 multiLineVacinas <- data.frame(
   data=dadosVacina$data,
@@ -385,7 +399,7 @@ mlpv
 ```
 
 ### Gráfico Linha
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 # Gráfico de linha dos novos vacinados primeira dose por dia
 
 lpvn <- ggplot(dadosVacina, aes(x=data, y=novos_vacinados)) +
@@ -412,7 +426,7 @@ for (i in 1:nrow(dadosMapa)){
 }
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 pal <- colorFactor(c("navy", "red"), domain = c("abaixo", "acima"))
 
 titulo <- "Casos Acumulados Por Bairro"
@@ -436,7 +450,7 @@ leaflet(dadosMapa) %>%
 dadosMarieta$data <- as.Date(dadosMarieta$data, format='%d/%m/%Y')
 ```
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 lpi <- ggplot(dadosMarieta, aes(x=data, y=internacoes_uti)) +
   geom_point(size=2, color="#fe3232") +
   geom_segment(aes(x=data, xend=data, y=0, yend=internacoes_uti), color="#fe3232") +
@@ -448,13 +462,13 @@ ggplotly(lpi)
 ```
 
 
-# Outros Gráficos
+# Outros Gráficos {data-navmenu="Gráficos"}
 
 Row 
 -----------------------------------------------------------------------
 
 ### Gráfico de Distribuição Ridge
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 rps20 <- dadosCorona %>%
     filter(ano == "2020") %>%
     ggplot(aes_string(x = "casos_ativos", y = "semana_ano_char", fill = "..x..")) +
@@ -471,7 +485,7 @@ rps20
 ```
 
 ### Gráfico de Distribuição Ridge
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 rps21 <- dadosCorona %>%
     filter(ano == "2021") %>%
     ggplot(aes_string(x = "casos_ativos", y = "semana_ano_char", fill = "..x..")) +
@@ -488,7 +502,7 @@ rps21
 ```
 
 ### Gráfico de Distribuição Ridge
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 rps20 <- dadosCorona %>%
     filter(ano == "2020") %>%
     ggplot(aes_string(x = "casos_ativos", y = "mes_ano_char", fill = "..x..")) +
@@ -505,7 +519,7 @@ rps20
 ```
 
 ### Gráfico de Distribuição Ridge
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 rps21 <- dadosCorona %>%
     filter(ano == "2021") %>%
     ggplot(aes_string(x = "casos_ativos", y = "mes_ano_char", fill = "..x..")) +
@@ -524,7 +538,7 @@ rps21
 Row {.tabset .tabset-fade}
 -----------------------------------------------------------------------
 ### Boxplot semana 2020 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 bps20 <- dadosCorona %>%
     filter(ano == "2020") %>%
     ggplot( aes_string(x="semana_ano_char", y="casos_ativos", fill="semana_ano_char")) +
@@ -545,7 +559,7 @@ ggplotly(bps20)
 ```
 
 ### Boxplot semana 2021
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 bps20 <- dadosCorona %>%
     filter(ano == "2021") %>%
     ggplot( aes_string(x="semana_ano_char", y="casos_ativos", fill="semana_ano_char")) +
@@ -567,7 +581,7 @@ ggplotly(bps20)
 
 
 ### Boxplot mês 2020 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 bps20 <- dadosCorona %>%
     filter(ano == "2020") %>%
     ggplot( aes_string(x="mes_ano_char", y="casos_ativos", fill="mes_ano_char")) +
@@ -588,7 +602,7 @@ ggplotly(bps20)
 ```
 
 ### Boxplot mês 2021
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width='100%'}
 bps20 <- dadosCorona %>%
     filter(ano == "2021") %>%
     ggplot( aes_string(x="mes_ano_char", y="casos_ativos", fill="mes_ano_char")) +
