@@ -211,7 +211,7 @@ mlp <- dygraph(donmlp, main = "Casos Acumulados (Confirmados e Curados)", ylab =
   dySeries("casos_curados", label = "Casos Curados", color = "green", fillGraph = TRUE) %>%
   dyLegend(show = "always", width = 800, hideOnMouseOut = TRUE) %>%
   dyOptions(drawGrid = FALSE)%>%
-  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3))
+  dyHighlight(highlightCircleSize = 8, highlightSeriesOpts = list(strokeWidth = 3))
 
 mlp
 ```
