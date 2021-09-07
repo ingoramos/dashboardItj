@@ -741,5 +741,6 @@ data;mes;num_mes;ano;idade;genero;comorbidades;hospital;cidade;uf;
 27/08/2021;agosto;8;2021;36;M;sim;não informado;Itajaí;SC;
 27/08/2021;agosto;8;2021;25;F;sim;não informado;Itajaí;SC;
 31/08/2021;agosto;8;2021;58;M;não;não informado;Itajaí;SC;
-02/09/2021;setembro;9;2021;83;M;sim;;;;
-02/09/2021;setembro;9;2021;96;M;sim;;;;
+02/09/2021;setembro;9;2021;83;M;sim;não informado;Itajaí;SC;
+02/09/2021;setembro;9;2021;96;M;sim;não informado;Itajaí;SC;
+06/09/2021;setembro;9;2021;70;M;sim;não informado;Itajaí;SC;
